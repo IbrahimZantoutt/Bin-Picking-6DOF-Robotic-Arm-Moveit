@@ -149,7 +149,7 @@
     <link name="wrist_link">
         <visual>
             <geometry>
-                <cylinder radius="0.04" length="0.03"/>
+                <cylinder radius="0.04" length="0.05"/>
             </geometry>
             <material name="purpel">
                 <color rgba="0.8 0.2 0.8 1.0"/>
@@ -157,7 +157,7 @@
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="0.04" length="0.03"/>
+                <cylinder radius="0.04" length="0.05"/>
             </geometry>
         </collision>
     </link>
@@ -165,12 +165,85 @@
     <joint name="j4_wrist" type="revolute">
         <parent link="elbow_arm"/>
         <child link="wrist_link"/>
-        <origin xyz="0 0 0.19" rpy="0 0 0"/>
+        <origin xyz="0 0 0.2" rpy="0 0 0"/>
         <axis xyz="0 0 1"/>
         <limit lower="-3.14159" upper="3.14159" effort="100.0" velocity="1.0"/>
     </joint>
 
+    <!-- J5 -->
 
+    <link name="wrist_pitch_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="1.5708 0 1.5708"/>
+            <geometry>
+                <cylinder radius="0.02" length="0.08"/>
+            </geometry>
+            <material name="red">
+                <color rgba="0.8 0.2 0.2 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.02" length="0.08"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="j5_wrist" type="revolute">
+        <parent link="wrist_link"/>
+        <child link="wrist_pitch_link"/>
+        <origin xyz="0.06 0 0" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-3.14159" upper="3.14159" effort="100.0" velocity="1.0"/>
+    </joint>
+
+    <link name="wrist_arm">
+        <visual>
+            <geometry>
+                <cylinder radius="0.02" length="0.08"/>
+            </geometry>
+            <material name="green">
+                <color rgba="0.2 0.8 0.2 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.02" length="0.08"/>
+            </geometry>
+        </collision>
+    </link>
+
+     <joint name="a3_wrist" type="fixed">
+        <parent link="wrist_pitch_link"/>
+        <child link="wrist_arm"/>
+        <origin xyz="0.01 0 0.04" rpy="0 0 0"/>
+    </joint>
+
+    <!-- J6 -->
+
+     <link name="wrist_yaw_link">
+        <visual>
+            <geometry>
+                <sphere radius="0.03"/>
+            </geometry>
+            <material name="purpel">
+                <color rgba="0.8 0.2 0.8 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <sphere radius="0.03"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="j6_wrist" type="revolute">
+        <parent link="wrist_arm"/>
+        <child link="wrist_yaw_link"/>
+        <origin xyz="0 0 0.05" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-3.14159" upper="3.14159" effort="100.0" velocity="1.0"/>
+    </joint>
 
 
 </robot>
