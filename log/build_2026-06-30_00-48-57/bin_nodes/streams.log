@@ -1,0 +1,10 @@
+[0.016s] Invoking command in '/home/ibrahim/BinPicking/build/bin_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16
+[0.085s] [ 50%] [32mBuilding CXX object CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o[0m
+[4.523s] [01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.523s] [01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:99:6:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kvoid[m[K’
+[4.523s]    99 |     ([01;31m[Kvoid[m[K)goToPose();
+[4.523s]       |      [01;31m[K^~~~[m[K
+[6.965s] gmake[2]: *** [CMakeFiles/MoveArm.dir/build.make:76: CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o] Error 1
+[6.965s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MoveArm.dir/all] Error 2
+[6.966s] gmake: *** [Makefile:146: all] Error 2
+[6.970s] Invoked command in '/home/ibrahim/BinPicking/build/bin_nodes' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16

@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o[0m
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:99:6:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kvoid[m[K’
+   99 |     ([01;31m[Kvoid[m[K)goToPose();
+      |      [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/MoveArm.dir/build.make:76: CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MoveArm.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

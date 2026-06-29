@@ -67,14 +67,40 @@
       target.position.x = 0.20;
       target.position.y = 0.00;
       target.position.z = 0.40;
-      target.orientation.w = 1.0;   // identity orientation (x=y=z=0)
+      target.orientation.w = 0.707;   // identity orientation (x=y=z=0)
       arm.setPoseTarget(target);    // targets the end-effector link (tool_link)
       plan_and_execute("cartesian pose");
     };
 
-    goToPose();
+    auto goToPositionMoreControl = [&](double x, double y, double z, double roll, double pitch, double yaw) {
+      tf2::Quaternion q;
+      q.setRPY(roll, pitch, yaw);
+
+      geometry_msgs::msg::Pose target;
+      target.position.x = x;
+      target.position.y = y;
+      target.position.z = z;
+      target.orientation.x = q.x();
+      target.orientation.y = q.y();
+      target.orientation.z = q.z();
+      target.orientation.w = q.w();
+
+      arm.setPoseTarget(target);
+      plan_and_execute("cartesian pose");
+  };
+
+  auto performanceTest = [&](){
+    goToPositionMoreControl(0.20, 0.00, 0.40,  0, M_PI, 0);      // from above
+    goToPositionMoreControl(0.20, 0.00, 0.40,  0, M_PI/2, 0);    // from front
+    goToPositionMoreControl(0.20, 0.00, 0.40,  0, 0, 0);          // from below
+    goToPositionMoreControl(0.20, 0.00, 0.40, 0, M_PI, M_PI/4);          // from below
+  };
+
+    // Usage:
+    (void)goToPose();
     (void)goToJointAngles();
     (void)goToPosition();
+    performanceTest();
 
     rclcpp::shutdown();
     spin_thread.join();
