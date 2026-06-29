@@ -1,0 +1,23 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: bin_nodes
+    relative_path: urdf/robot.urdf
+  srdf:
+    relative_path: config/robot_arm.srdf
+  package_settings:
+    author_name: iz
+    author_email: iz@gmail.com
+    generated_timestamp: 1782760552
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position

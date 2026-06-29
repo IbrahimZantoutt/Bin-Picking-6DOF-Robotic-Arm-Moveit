@@ -13,8 +13,9 @@
             </material>
         </visual>
         <collision>
+            <origin xyz="0 0 0.025" rpy="0 0 0"/>
             <geometry>
-                <box size="0.2 0.2 0.05"/>
+                <box size="0.18 0.18 0.04"/>
             </geometry>
         </collision>
     </link>
@@ -29,8 +30,9 @@
             </material>
         </visual>
         <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <cylinder radius="0.06" length="0.15"/>
+                <box size="0.09 0.09 0.13"/>
             </geometry>
         </collision>
     </link>
@@ -56,8 +58,9 @@
             </material>
         </visual>
         <collision>
+            <origin xyz="0 0 0" rpy="1.5708 0 1.5708"/>
             <geometry>
-                <cylinder radius="0.04" length="0.14"/>
+                <box size="0.06 0.06 0.12"/>
             </geometry>
         </collision>
     </link>
@@ -81,8 +84,9 @@
             </material>
         </visual>
         <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <cylinder radius="0.04" length="0.35"/>
+                <box size="0.06 0.06 0.31"/>
             </geometry>
         </collision>
     </link>
@@ -106,8 +110,9 @@
             </material>
         </visual>
         <collision>
+            <origin xyz="0 0 0" rpy="1.5708 0 1.5708"/>
             <geometry>
-                <cylinder radius="0.04" length="0.16"/>
+                <box size="0.06 0.06 0.14"/>
             </geometry>
         </collision>
     </link>
@@ -132,8 +137,9 @@
             </material>
         </visual>
         <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <cylinder radius="0.04" length="0.35"/>
+                <box size="0.06 0.06 0.31"/>
             </geometry>
         </collision>
     </link>
@@ -156,8 +162,9 @@
             </material>
         </visual>
         <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <cylinder radius="0.04" length="0.05"/>
+                <box size="0.06 0.06 0.04"/>
             </geometry>
         </collision>
     </link>
@@ -183,8 +190,9 @@
             </material>
         </visual>
         <collision>
+            <origin xyz="0 0 0" rpy="1.5708 0 1.5708"/>
             <geometry>
-                <cylinder radius="0.02" length="0.08"/>
+                <box size="0.03 0.03 0.04"/>
             </geometry>
         </collision>
     </link>
@@ -207,8 +215,9 @@
             </material>
         </visual>
         <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <cylinder radius="0.02" length="0.08"/>
+                <box size="0.03 0.03 0.05"/>
             </geometry>
         </collision>
     </link>
@@ -232,7 +241,7 @@
         </visual>
         <collision>
             <geometry>
-                <sphere radius="0.02"/>
+                <sphere radius="0.015"/>
             </geometry>
         </collision>
     </link>
@@ -258,8 +267,9 @@
             </material>
         </visual>
         <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <cylinder radius="0.01" length="0.05"/>
+                <box size="0.015 0.015 0.04"/>
             </geometry>
         </collision>
     </link>
