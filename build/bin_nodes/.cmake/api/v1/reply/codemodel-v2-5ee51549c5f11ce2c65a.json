@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-07b5af84b5c250e4a8e6.json",
+					"jsonFile" : "directory-.-9980fbc5a439a0630d66.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MoveArm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MoveArm-840d89f717746dd1141e.json",
+					"jsonFile" : "target-MoveArm-c13fd850874c52dd7e3d.json",
 					"name" : "MoveArm",
 					"projectIndex" : 0
 				},

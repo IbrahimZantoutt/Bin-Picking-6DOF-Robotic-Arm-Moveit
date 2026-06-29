@@ -1,0 +1,20 @@
+[0.023s] Invoking command in '/home/ibrahim/BinPicking/build/bin_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target MoveArm[0m
+[0.177s] [ 50%] [32mBuilding CXX object CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o[0m
+[5.409s] [01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.409s] [01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:50:18:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[5.409s]    50 |   void goToPose()[01;31m[K{[m[K
+[5.409s]       |                  [01;31m[K^[m[K
+[5.409s] [01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:57:25:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[5.409s]    57 |   void goToJointAngles()[01;31m[K{[m[K
+[5.409s]       |                         [01;31m[K^[m[K
+[5.409s] [01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:64:17:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[5.409s]    64 |   void goToPos()[01;31m[K{[m[K
+[5.409s]       |                 [01;31m[K^[m[K
+[5.414s] [01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:75:3:[m[K [01;31m[Kerror: [m[K‘[01m[KgoToPose[m[K’ was not declared in this scope
+[5.414s]    75 |   [01;31m[KgoToPose[m[K();
+[5.414s]       |   [01;31m[K^~~~~~~~[m[K
+[7.917s] gmake[2]: *** [CMakeFiles/MoveArm.dir/build.make:76: CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o] Error 1
+[7.918s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MoveArm.dir/all] Error 2
+[7.918s] gmake: *** [Makefile:146: all] Error 2
+[7.921s] Invoked command in '/home/ibrahim/BinPicking/build/bin_nodes' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16

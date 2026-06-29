@@ -1,0 +1,18 @@
+[35m[1mConsolidate compiler generated dependencies of target MoveArm[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o[0m
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:50:18:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+   50 |   void goToPose()[01;31m[K{[m[K
+      |                  [01;31m[K^[m[K
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:57:25:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+   57 |   void goToJointAngles()[01;31m[K{[m[K
+      |                         [01;31m[K^[m[K
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:64:17:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+   64 |   void goToPos()[01;31m[K{[m[K
+      |                 [01;31m[K^[m[K
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:75:3:[m[K [01;31m[Kerror: [m[K‘[01m[KgoToPose[m[K’ was not declared in this scope
+   75 |   [01;31m[KgoToPose[m[K();
+      |   [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/MoveArm.dir/build.make:76: CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MoveArm.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

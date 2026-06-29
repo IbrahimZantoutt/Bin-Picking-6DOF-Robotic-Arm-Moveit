@@ -1,0 +1,108 @@
+[0.000000] (-) TimerEvent: {}
+[0.000761] (bin_nodes) JobQueued: {'identifier': 'bin_nodes', 'dependencies': OrderedDict()}
+[0.000819] (moveit_config) JobQueued: {'identifier': 'moveit_config', 'dependencies': OrderedDict([('bin_nodes', '/home/ibrahim/BinPicking/install/bin_nodes')])}
+[0.001006] (bin_nodes) JobStarted: {'identifier': 'bin_nodes'}
+[0.020054] (bin_nodes) JobProgress: {'identifier': 'bin_nodes', 'progress': 'cmake'}
+[0.021663] (bin_nodes) JobProgress: {'identifier': 'bin_nodes', 'progress': 'build'}
+[0.022374] (bin_nodes) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ibrahim/BinPicking/build/bin_nodes', '--', '-j16', '-l16'], 'cwd': '/home/ibrahim/BinPicking/build/bin_nodes', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ibrahim'), ('GIT_ASKPASS', '/home/ibrahim/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-7b8e0998-0efe-442b-a72e-37922a6710d3.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ibrahim/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ibrahim/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/419_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '32257'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ibrahim/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ibrahim/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ibrahim/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Windows/system32/config/systemprofile/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin:/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ibrahim/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-10df151ca0b970d9.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/ibrahim/.vscode-server/data/User/workspaceStorage/53d6af783f54596ecf064b03d33c69c7/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6e1624529d.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ibrahim/BinPicking/build/bin_nodes'), ('COPILOT_DEBUG_NONCE', 'd05f4ba8ec07642c4df8354ff840a334'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.099846] (-) TimerEvent: {}
+[0.141321] (bin_nodes) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target MoveArm\x1b[0m\n'}
+[0.177950] (bin_nodes) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o\x1b[0m\n'}
+[0.199969] (-) TimerEvent: {}
+[0.300431] (-) TimerEvent: {}
+[0.400840] (-) TimerEvent: {}
+[0.501361] (-) TimerEvent: {}
+[0.601767] (-) TimerEvent: {}
+[0.702217] (-) TimerEvent: {}
+[0.802806] (-) TimerEvent: {}
+[0.903325] (-) TimerEvent: {}
+[1.003725] (-) TimerEvent: {}
+[1.104102] (-) TimerEvent: {}
+[1.204500] (-) TimerEvent: {}
+[1.304886] (-) TimerEvent: {}
+[1.405252] (-) TimerEvent: {}
+[1.505653] (-) TimerEvent: {}
+[1.606099] (-) TimerEvent: {}
+[1.706515] (-) TimerEvent: {}
+[1.806973] (-) TimerEvent: {}
+[1.907447] (-) TimerEvent: {}
+[2.007991] (-) TimerEvent: {}
+[2.108440] (-) TimerEvent: {}
+[2.208837] (-) TimerEvent: {}
+[2.309350] (-) TimerEvent: {}
+[2.409761] (-) TimerEvent: {}
+[2.510193] (-) TimerEvent: {}
+[2.610601] (-) TimerEvent: {}
+[2.710964] (-) TimerEvent: {}
+[2.811421] (-) TimerEvent: {}
+[2.911904] (-) TimerEvent: {}
+[3.012505] (-) TimerEvent: {}
+[3.113038] (-) TimerEvent: {}
+[3.213573] (-) TimerEvent: {}
+[3.314042] (-) TimerEvent: {}
+[3.414565] (-) TimerEvent: {}
+[3.514974] (-) TimerEvent: {}
+[3.615384] (-) TimerEvent: {}
+[3.715784] (-) TimerEvent: {}
+[3.816321] (-) TimerEvent: {}
+[3.916844] (-) TimerEvent: {}
+[4.017259] (-) TimerEvent: {}
+[4.117651] (-) TimerEvent: {}
+[4.218106] (-) TimerEvent: {}
+[4.318541] (-) TimerEvent: {}
+[4.418981] (-) TimerEvent: {}
+[4.519418] (-) TimerEvent: {}
+[4.619831] (-) TimerEvent: {}
+[4.720330] (-) TimerEvent: {}
+[4.820765] (-) TimerEvent: {}
+[4.921149] (-) TimerEvent: {}
+[5.021585] (-) TimerEvent: {}
+[5.122044] (-) TimerEvent: {}
+[5.222485] (-) TimerEvent: {}
+[5.322916] (-) TimerEvent: {}
+[5.409867] (bin_nodes) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.410133] (bin_nodes) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:50:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.410246] (bin_nodes) StderrLine: {'line': b'   50 |   void goToPose()\x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[5.410286] (bin_nodes) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.410319] (bin_nodes) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:57:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.410351] (bin_nodes) StderrLine: {'line': b'   57 |   void goToJointAngles()\x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[5.410380] (bin_nodes) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.410408] (bin_nodes) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:64:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.410435] (bin_nodes) StderrLine: {'line': b'   64 |   void goToPos()\x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[5.410462] (bin_nodes) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.414870] (bin_nodes) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ibrahim/BinPicking/src/bin_nodes/src/MoveArm.cpp:75:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgoToPose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.415067] (bin_nodes) StderrLine: {'line': b'   75 |   \x1b[01;31m\x1b[KgoToPose\x1b[m\x1b[K();\n'}
+[5.415183] (bin_nodes) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.423088] (-) TimerEvent: {}
+[5.523535] (-) TimerEvent: {}
+[5.623982] (-) TimerEvent: {}
+[5.724490] (-) TimerEvent: {}
+[5.824959] (-) TimerEvent: {}
+[5.925391] (-) TimerEvent: {}
+[6.025860] (-) TimerEvent: {}
+[6.126326] (-) TimerEvent: {}
+[6.226744] (-) TimerEvent: {}
+[6.327191] (-) TimerEvent: {}
+[6.427708] (-) TimerEvent: {}
+[6.528220] (-) TimerEvent: {}
+[6.628731] (-) TimerEvent: {}
+[6.729295] (-) TimerEvent: {}
+[6.829820] (-) TimerEvent: {}
+[6.930391] (-) TimerEvent: {}
+[7.030870] (-) TimerEvent: {}
+[7.131413] (-) TimerEvent: {}
+[7.231839] (-) TimerEvent: {}
+[7.332259] (-) TimerEvent: {}
+[7.432710] (-) TimerEvent: {}
+[7.533166] (-) TimerEvent: {}
+[7.633638] (-) TimerEvent: {}
+[7.734072] (-) TimerEvent: {}
+[7.834472] (-) TimerEvent: {}
+[7.918245] (bin_nodes) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/MoveArm.dir/build.make:76: CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o] Error 1\n'}
+[7.918598] (bin_nodes) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MoveArm.dir/all] Error 2\n'}
+[7.918929] (bin_nodes) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.922192] (bin_nodes) CommandEnded: {'returncode': 2}
+[7.934672] (-) TimerEvent: {}
+[7.939816] (bin_nodes) JobEnded: {'identifier': 'bin_nodes', 'rc': 2}
+[7.950909] (moveit_config) JobSkipped: {'identifier': 'moveit_config'}
+[7.951022] (-) EventReactorShutdown: {}
