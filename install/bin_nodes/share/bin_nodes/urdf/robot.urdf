@@ -260,7 +260,7 @@
     <link name="tool_link">
         <visual>
             <geometry>
-                <cylinder radius="0.01" length="0.05"/>
+                <cylinder radius="0.01" length="0.04"/>
             </geometry>
             <material name="else">
                 <color rgba="0.2 0.8 0.8 1.0"/>
@@ -269,18 +269,89 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <box size="0.015 0.015 0.04"/>
+                <box size="0.015 0.015 0.03"/>
             </geometry>
         </collision>
     </link>
 
-     <joint name="tool_joint" type="fixed">
+    <joint name="tool_joint" type="fixed">
         <parent link="wrist_yaw_link"/>
         <child link="tool_link"/>
-        <origin xyz="0 0 0.04" rpy="0 0 0"/>
+        <origin xyz="0 0 0.03" rpy="0 0 0"/>
     </joint>
 
 
+     <link name="gripper_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+            <geometry>
+                <box size="0.015 0.015 0.05"/>
+            </geometry>
+            <material name="else">
+                <color rgba="0.2 0.8 0.8 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+            <geometry>
+                <box size="0.015 0.015 0.03"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="gripper_joint" type="fixed">
+        <parent link="tool_link"/>
+        <child link="gripper_link"/>
+        <origin xyz="0 0 0.02" rpy="0 0 0"/>
+    </joint>
+
+    <link name="gripperfinger_left_link">
+        <visual>
+            <geometry>
+                <box size="0.0075 0.0075 0.04"/>
+            </geometry>
+            <material name="else">
+                <color rgba="0.2 0.8 0.8 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.0075 0.0075 0.04"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="gripperfinger_right_link">
+        <visual>
+            <geometry>
+                <box size="0.0075 0.0075 0.04"/>
+            </geometry>
+            <material name="else">
+                <color rgba="0.2 0.8 0.8 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.0075 0.0075 0.04"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="gripperfinger_left_joint" type="prismatic">
+        <parent link="gripper_link"/>
+        <child link="gripperfinger_left_link"/>
+        <origin xyz="0 0.02 0.02" rpy="0 0 0"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="0" upper="0.02" effort="100.0" velocity="1.0"/>
+    </joint>
+
+    <joint name="gripperfinger_right_joint" type="prismatic">
+        <parent link="gripper_link"/>
+        <child link="gripperfinger_right_link"/>
+        <origin xyz="0 -0.02 0.02" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="0" upper="0.02" effort="100.0" velocity="1.0"/>
+    </joint>
 
 
 </robot>

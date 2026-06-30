@@ -1,0 +1,32 @@
+[0.019s] Invoking command in '/home/ibrahim/BinPicking/build/bin_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16
+[0.099s] [35m[1mConsolidate compiler generated dependencies of target MoveArm[0m
+[0.139s] [ 50%] [32mBuilding CXX object CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o[0m
+[11.279s] [100%] [32m[1mLinking CXX executable MoveArm[0m
+[11.718s] [100%] Built target MoveArm
+[11.733s] Invoked command in '/home/ibrahim/BinPicking/build/bin_nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16
+[11.745s] Invoking command in '/home/ibrahim/BinPicking/build/bin_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/BinPicking/build/bin_nodes
+[11.753s] -- Install configuration: ""
+[11.754s] -- Installing: /home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/MoveArm
+[11.755s] -- Set runtime path of "/home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/MoveArm" to ""
+[11.755s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/launch
+[11.755s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/launch/display.launch.py
+[11.756s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/urdf
+[11.756s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/urdf/robot.urdf
+[11.756s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/rviz
+[11.756s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/rviz/model.rviz
+[11.756s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/ament_index/resource_index/package_run_dependencies/bin_nodes
+[11.756s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/ament_index/resource_index/parent_prefix_path/bin_nodes
+[11.756s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/ament_prefix_path.sh
+[11.757s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/ament_prefix_path.dsv
+[11.757s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/path.sh
+[11.757s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/path.dsv
+[11.757s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.bash
+[11.757s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.sh
+[11.757s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.zsh
+[11.757s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.dsv
+[11.758s] -- Installing: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/package.dsv
+[11.758s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/ament_index/resource_index/packages/bin_nodes
+[11.758s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/cmake/bin_nodesConfig.cmake
+[11.758s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/cmake/bin_nodesConfig-version.cmake
+[11.758s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/package.xml
+[11.762s] Invoked command in '/home/ibrahim/BinPicking/build/bin_nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/BinPicking/build/bin_nodes
