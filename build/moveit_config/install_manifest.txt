@@ -25,6 +25,7 @@
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/config/robot_arm.ros2_control.xacro
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/config/kinematics.yaml
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/config/robot_arm.urdf.xacro
+/home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/config/sensors_3d.yaml
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/config/moveit_controllers.yaml
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/config/moveit.rviz
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/config/pilz_cartesian_limits.yaml
