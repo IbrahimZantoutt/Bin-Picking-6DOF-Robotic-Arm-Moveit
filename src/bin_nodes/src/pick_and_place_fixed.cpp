@@ -50,7 +50,12 @@ int main(int argc, char **argv){
         goToPos(0.34, 0.347, 0.241,3.091, -1.412, 0.373);
     };
 
+    auto place = [&](){
+        goToPos(0.374, -0.215, 0.327,-0.898, -1.442, 2.633);
+    };
+
     pick();
+    place();
 
 
     rclcpp::shutdown();
