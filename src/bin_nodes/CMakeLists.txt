@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 find_package(moveit_ros_planning_interface REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
+find_package(linkattacher_msgs REQUIRED)
 
 add_executable(MoveArm src/MoveArm.cpp)
 target_include_directories(MoveArm PUBLIC
@@ -31,7 +32,8 @@ ament_target_dependencies(pick_and_place_fixed
   rclcpp
   moveit_ros_planning_interface
   geometry_msgs
-  tf2)
+  tf2
+  linkattacher_msgs)
 
 install(TARGETS MoveArm pick_and_place_fixed
   DESTINATION lib/${PROJECT_NAME})

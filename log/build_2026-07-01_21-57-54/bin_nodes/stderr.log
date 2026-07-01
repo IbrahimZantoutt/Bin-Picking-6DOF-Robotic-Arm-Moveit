@@ -1,0 +1,4 @@
+/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp: In function ‘int main(int, char**)’:
+/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:110:10: warning: variable ‘place’ set but not used [-Wunused-but-set-variable]
+  110 |     auto place = [&](){
+      |          ^~~~~

@@ -338,7 +338,7 @@ TINYXML2_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libtinyxml2.so
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/lib/liblinkattacher_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
@@ -549,6 +549,9 @@ libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
 
 //The directory containing a CMake configuration file for lifecycle_msgs.
 lifecycle_msgs_DIR:PATH=/opt/ros/humble/share/lifecycle_msgs/cmake
+
+//The directory containing a CMake configuration file for linkattacher_msgs.
+linkattacher_msgs_DIR:PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/cmake
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake

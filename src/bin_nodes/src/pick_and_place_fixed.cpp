@@ -2,7 +2,12 @@
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <geometry_msgs/msg/pose.hpp>
 #include <tf2/LinearMath/Quaternion.h>
+#include <linkattacher_msgs/srv/attach_link.hpp>
+#include <linkattacher_msgs/srv/detach_link.hpp>
+#include <chrono>
 #include <thread>
+
+using namespace std::chrono_literals;
 
 using moveit::planning_interface::MoveGroupInterface;
 int main(int argc, char **argv){
@@ -31,6 +36,52 @@ int main(int argc, char **argv){
       return ok;
     };
 
+    // Service clients for the Gazebo LinkAttacher plugin.
+    auto attach_client = node->create_client<linkattacher_msgs::srv::AttachLink>("/ATTACHLINK");
+    auto detach_client = node->create_client<linkattacher_msgs::srv::DetachLink>("/DETACHLINK");
+
+    auto attach = [&](const std::string & m1, const std::string & l1,
+                      const std::string & m2, const std::string & l2){
+        if (!attach_client->wait_for_service(5s)) {
+            RCLCPP_ERROR(logger, "/ATTACHLINK service not available");
+            return false;
+        }
+        auto req = std::make_shared<linkattacher_msgs::srv::AttachLink::Request>();
+        req->model1_name = m1;
+        req->link1_name  = l1;
+        req->model2_name = m2;
+        req->link2_name  = l2;
+        auto future = attach_client->async_send_request(req);
+        if (future.wait_for(5s) != std::future_status::ready) {
+            RCLCPP_ERROR(logger, "/ATTACHLINK call timed out");
+            return false;
+        }
+        auto res = future.get();
+        RCLCPP_INFO(logger, "Attach: %s (%s)", res->success ? "OK" : "FAIL", res->message.c_str());
+        return res->success;
+    };
+
+    auto detach = [&](const std::string & m1, const std::string & l1,
+                      const std::string & m2, const std::string & l2){
+        if (!detach_client->wait_for_service(5s)) {
+            RCLCPP_ERROR(logger, "/DETACHLINK service not available");
+            return false;
+        }
+        auto req = std::make_shared<linkattacher_msgs::srv::DetachLink::Request>();
+        req->model1_name = m1;
+        req->link1_name  = l1;
+        req->model2_name = m2;
+        req->link2_name  = l2;
+        auto future = detach_client->async_send_request(req);
+        if (future.wait_for(5s) != std::future_status::ready) {
+            RCLCPP_ERROR(logger, "/DETACHLINK call timed out");
+            return false;
+        }
+        auto res = future.get();
+        RCLCPP_INFO(logger, "Detach: %s (%s)", res->success ? "OK" : "FAIL", res->message.c_str());
+        return res->success;
+    };
+
     auto goToPos = [&](double x, double y, double z, double roll, double pitch, double yaw){
         geometry_msgs::msg::Pose target_pose;
         target_pose.position.x = x;
@@ -47,14 +98,22 @@ int main(int argc, char **argv){
     };
 
     auto pick = [&](){
+        //goToPos(0.304, 0.339, 0.247,2.863, 1.389, -3.141);  better to add when added collision aware movement
         goToPos(0.34, 0.347, 0.241,3.091, -1.412, 0.373);
+        attach("robot_arm", "wrist_yaw_link", "green_cube", "link");
     };
 
     auto place = [&](){
-        goToPos(0.374, -0.215, 0.327,-0.898, -1.442, 2.633);
+        //goToPos(0.374, -0.215, 0.327,-0.898, -1.442, 2.633);
+        goToPos(0.313, -0.309, 0.379,3.141, 1.390, 3.142);
+        detach("robot_arm", "wrist_yaw_link", "green_cube", "link");
     };
 
     pick();
+
+    //sleep is needed for a little delay until the arm has setteled down
+    std::this_thread::sleep_for(2s);
+
     place();
 
 
