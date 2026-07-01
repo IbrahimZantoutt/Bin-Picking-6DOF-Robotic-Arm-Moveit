@@ -42,10 +42,10 @@
       </link>
     </model>
 
-    <!-- Table in front of the robot (top surface at z = 0.2) -->
+    <!-- Bin table, to the robot's right (top surface at z = 0.2) -->
     <model name="table">
       <static>true</static>
-      <pose>0.4 0 0.1 0 0 0</pose>
+      <pose>0.4 -0.35 0.1 0 0 0</pose>
       <link name="link">
         <collision name="collision">
           <geometry><box><size>0.4 0.6 0.2</size></box></geometry>
@@ -60,10 +60,10 @@
       </link>
     </model>
 
-    <!-- Open-top bin sitting on the table (base at z = 0.2) -->
+    <!-- Open-top bin sitting on the bin table (base at z = 0.2) -->
     <model name="bin">
       <static>true</static>
-      <pose>0.4 0 0.2 0 0 0</pose>
+      <pose>0.4 -0.35 0.2 0 0 0</pose>
       <link name="link">
         <!-- floor -->
         <collision name="floor_col">
@@ -114,6 +114,51 @@
           <pose>0 -0.165 0.05 0 0 0</pose>
           <geometry><box><size>0.24 0.01 0.1</size></box></geometry>
           <material><ambient>0.2 0.4 0.5 1</ambient><diffuse>0.3 0.5 0.6 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Pick table, to the robot's left (top surface at z = 0.2) -->
+    <model name="pick_table">
+      <static>true</static>
+      <pose>0.4 0.35 0.1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.4 0.6 0.2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.4 0.6 0.2</size></box></geometry>
+          <material>
+            <ambient>0.4 0.25 0.1 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Green cube to pick (dynamic, resting on the pick table top at z = 0.2) -->
+    <model name="green_cube">
+      <pose>0.4 0.35 0.22 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>0.05</mass>
+          <inertia>
+            <ixx>0.0000133</ixx><ixy>0</ixy><ixz>0</ixz>
+            <iyy>0.0000133</iyy><iyz>0</iyz><izz>0.0000133</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry><box><size>0.04 0.04 0.04</size></box></geometry>
+          <surface>
+            <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.04 0.04 0.04</size></box></geometry>
+          <material>
+            <ambient>0.1 0.6 0.1 1</ambient>
+            <diffuse>0.1 0.8 0.1 1</diffuse>
+          </material>
         </visual>
       </link>
     </model>
