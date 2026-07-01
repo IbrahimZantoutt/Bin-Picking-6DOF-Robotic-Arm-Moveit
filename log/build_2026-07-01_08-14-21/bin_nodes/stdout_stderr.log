@@ -1,0 +1,27 @@
+Consolidate compiler generated dependencies of target pick_and_place_fixed
+[ 50%] Built target MoveArm
+[ 75%] Building CXX object CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o
+/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp: In function ‘int main(int, char**)’:
+/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:16:39: error: no matching function for call to ‘moveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const char [4], std::shared_ptr<rclcpp::Node>&)’
+   16 |     MoveGroupInterface arm("arm", node);
+      |                                       ^
+In file included from /home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:2:
+/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:159:3: note: candidate: ‘moveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)’
+  159 |   MoveGroupInterface(MoveGroupInterface&& other) noexcept;
+      |   ^~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:159:3: note:   candidate expects 1 argument, 2 provided
+/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:145:3: note: candidate: ‘moveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)’
+  145 |   MoveGroupInterface(const rclcpp::Node::SharedPtr& node, const std::string& group,
+      |   ^~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:145:53: note:   no known conversion for argument 1 from ‘const char [4]’ to ‘const SharedPtr&’ {aka ‘const std::shared_ptr<rclcpp::Node>&’}
+  145 |   MoveGroupInterface(const rclcpp::Node::SharedPtr& node, const std::string& group,
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:134:3: note: candidate: ‘moveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)’
+  134 |   MoveGroupInterface(const rclcpp::Node::SharedPtr& node, const Options& opt,
+      |   ^~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:134:53: note:   no known conversion for argument 1 from ‘const char [4]’ to ‘const SharedPtr&’ {aka ‘const std::shared_ptr<rclcpp::Node>&’}
+  134 |   MoveGroupInterface(const rclcpp::Node::SharedPtr& node, const Options& opt,
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+gmake[2]: *** [CMakeFiles/pick_and_place_fixed.dir/build.make:76: CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pick_and_place_fixed.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

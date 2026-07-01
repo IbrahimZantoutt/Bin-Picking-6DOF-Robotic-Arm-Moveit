@@ -1,0 +1,29 @@
+[0.019s] Invoking command in '/home/ibrahim/BinPicking/build/bin_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target pick_and_place_fixed[0m
+[0.102s] [ 50%] Built target MoveArm
+[0.112s] [ 75%] [32mBuilding CXX object CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o[0m
+[5.436s] [01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.436s] [01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:16:39:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const char [4], std::shared_ptr<rclcpp::Node>&)[m[K’
+[5.436s]    16 |     MoveGroupInterface arm("arm", node[01;31m[K)[m[K;
+[5.436s]       |                                       [01;31m[K^[m[K
+[5.436s] In file included from [01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:2[m[K:
+[5.437s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+[5.437s]   159 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+[5.437s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.437s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:159:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[5.437s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:145:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[5.437s]   145 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const std::string& group,
+[5.437s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.437s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:145:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [4][m[K’ to ‘[01m[Kconst SharedPtr&[m[K’ {aka ‘[01m[Kconst std::shared_ptr<rclcpp::Node>&[m[K’}
+[5.437s]   145 |   MoveGroupInterface([01;36m[Kconst rclcpp::Node::SharedPtr& node[m[K, const std::string& group,
+[5.437s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[5.438s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:134:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)[m[K’
+[5.438s]   134 |   [01;36m[KMoveGroupInterface[m[K(const rclcpp::Node::SharedPtr& node, const Options& opt,
+[5.438s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.438s] [01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:134:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [4][m[K’ to ‘[01m[Kconst SharedPtr&[m[K’ {aka ‘[01m[Kconst std::shared_ptr<rclcpp::Node>&[m[K’}
+[5.438s]   134 |   MoveGroupInterface([01;36m[Kconst rclcpp::Node::SharedPtr& node[m[K, const Options& opt,
+[5.438s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[8.229s] gmake[2]: *** [CMakeFiles/pick_and_place_fixed.dir/build.make:76: CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o] Error 1
+[8.229s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pick_and_place_fixed.dir/all] Error 2
+[8.229s] gmake: *** [Makefile:146: all] Error 2
+[8.233s] Invoked command in '/home/ibrahim/BinPicking/build/bin_nodes' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16

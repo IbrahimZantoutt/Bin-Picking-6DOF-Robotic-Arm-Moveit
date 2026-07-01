@@ -1,6 +1,7 @@
 /home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles/uninstall.dir
 /home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles/bin_nodes_uninstall.dir
 /home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles/MoveArm.dir
+/home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles/pick_and_place_fixed.dir
 /home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles/test.dir
 /home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles/edit_cache.dir
 /home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles/rebuild_cache.dir

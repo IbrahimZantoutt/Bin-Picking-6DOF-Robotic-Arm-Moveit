@@ -210,6 +210,19 @@ MoveArm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MoveArm.dir/build.make CMakeFiles/MoveArm.dir/build
 .PHONY : MoveArm/fast
 
+#=============================================================================
+# Target rules for targets named pick_and_place_fixed
+
+# Build rule for target.
+pick_and_place_fixed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_and_place_fixed
+.PHONY : pick_and_place_fixed
+
+# fast build rule for target.
+pick_and_place_fixed/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_fixed.dir/build.make CMakeFiles/pick_and_place_fixed.dir/build
+.PHONY : pick_and_place_fixed/fast
+
 src/MoveArm.o: src/MoveArm.cpp.o
 .PHONY : src/MoveArm.o
 
@@ -234,6 +247,30 @@ src/MoveArm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MoveArm.dir/build.make CMakeFiles/MoveArm.dir/src/MoveArm.cpp.s
 .PHONY : src/MoveArm.cpp.s
 
+src/pick_and_place_fixed.o: src/pick_and_place_fixed.cpp.o
+.PHONY : src/pick_and_place_fixed.o
+
+# target to build an object file
+src/pick_and_place_fixed.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_fixed.dir/build.make CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o
+.PHONY : src/pick_and_place_fixed.cpp.o
+
+src/pick_and_place_fixed.i: src/pick_and_place_fixed.cpp.i
+.PHONY : src/pick_and_place_fixed.i
+
+# target to preprocess a source file
+src/pick_and_place_fixed.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_fixed.dir/build.make CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.i
+.PHONY : src/pick_and_place_fixed.cpp.i
+
+src/pick_and_place_fixed.s: src/pick_and_place_fixed.cpp.s
+.PHONY : src/pick_and_place_fixed.s
+
+# target to generate assembly for a file
+src/pick_and_place_fixed.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_fixed.dir/build.make CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.s
+.PHONY : src/pick_and_place_fixed.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... bin_nodes_uninstall"
 	@echo "... uninstall"
 	@echo "... MoveArm"
+	@echo "... pick_and_place_fixed"
 	@echo "... src/MoveArm.o"
 	@echo "... src/MoveArm.i"
 	@echo "... src/MoveArm.s"
+	@echo "... src/pick_and_place_fixed.o"
+	@echo "... src/pick_and_place_fixed.i"
+	@echo "... src/pick_and_place_fixed.s"
 .PHONY : help
 
 

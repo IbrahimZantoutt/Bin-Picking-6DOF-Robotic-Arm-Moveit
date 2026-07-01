@@ -1,4 +1,5 @@
 /home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/MoveArm
+/home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/pick_and_place_fixed
 /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/launch/display.launch.py
 /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/urdf/robot.urdf
 /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/rviz/model.rviz

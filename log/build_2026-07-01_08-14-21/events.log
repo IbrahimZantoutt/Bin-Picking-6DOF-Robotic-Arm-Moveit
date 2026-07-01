@@ -1,0 +1,117 @@
+[0.000000] (-) TimerEvent: {}
+[0.000298] (-) JobUnselected: {'identifier': 'moveit_config'}
+[0.000368] (bin_nodes) JobQueued: {'identifier': 'bin_nodes', 'dependencies': OrderedDict()}
+[0.000414] (bin_nodes) JobStarted: {'identifier': 'bin_nodes'}
+[0.014251] (bin_nodes) JobProgress: {'identifier': 'bin_nodes', 'progress': 'cmake'}
+[0.015571] (bin_nodes) JobProgress: {'identifier': 'bin_nodes', 'progress': 'build'}
+[0.016294] (bin_nodes) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ibrahim/BinPicking/build/bin_nodes', '--', '-j16', '-l16'], 'cwd': '/home/ibrahim/BinPicking/build/bin_nodes', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('AI_AGENT', 'claude-code_2-1-197_agent'), ('USER', 'ibrahim'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/ibrahim/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('GIT_EDITOR', 'true'), ('VSCODE_WSL_EXT_LOCATION', '/mnt/c/Users/zanto/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('CLAUDE_AGENT_SDK_VERSION', '0.3.197'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ibrahim'), ('GIT_CONFIG_COUNT', '1'), ('OLDPWD', '/home/ibrahim/BinPicking'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-bd964576-92f5-4212-9f3a-d2770421f1e7.sock'), ('ROS_PYTHON_VERSION', '3'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('COPILOT_OTEL_FILE_EXPORTER_PATH', '/dev/null'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/416_interop'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GIT_CONFIG_VALUE_0', 'explicit'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/home/ibrahim/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Users/zanto/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('CLAUDE_EFFORT', 'xhigh'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('MXC_BIN_DIR', '/home/ibrahim/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node_modules/@microsoft/mxc-sdk/bin'), ('ELECTRON_RUN_AS_NODE', '1'), ('GIT_CONFIG_KEY_0', 'safe.bareRepository'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('CLAUDE_CODE_SESSION_ID', 'a42d62a6-8248-4659-9a25-f3f2eb085a1c'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('PWD', '/home/ibrahim/BinPicking/build/bin_nodes'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ibrahim/.vscode-server/extensions/anthropic.claude-code-2.1.197-linux-x64/resources/native-binary/claude'), ('PYTHONPATH', '/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CLAUDE_CODE_ENABLE_TASKS', '0'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('COPILOT_CLI_ENABLED_FEATURE_FLAGS', 'SHELL_SPAWN_BACKEND'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.099510] (-) TimerEvent: {}
+[0.101381] (bin_nodes) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target pick_and_place_fixed\n'}
+[0.110305] (bin_nodes) StdoutLine: {'line': b'[ 50%] Built target MoveArm\n'}
+[0.125665] (bin_nodes) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o\n'}
+[0.199688] (-) TimerEvent: {}
+[0.299991] (-) TimerEvent: {}
+[0.400254] (-) TimerEvent: {}
+[0.500539] (-) TimerEvent: {}
+[0.600827] (-) TimerEvent: {}
+[0.701211] (-) TimerEvent: {}
+[0.801569] (-) TimerEvent: {}
+[0.901941] (-) TimerEvent: {}
+[1.002320] (-) TimerEvent: {}
+[1.102697] (-) TimerEvent: {}
+[1.203053] (-) TimerEvent: {}
+[1.303572] (-) TimerEvent: {}
+[1.403864] (-) TimerEvent: {}
+[1.504159] (-) TimerEvent: {}
+[1.604538] (-) TimerEvent: {}
+[1.704853] (-) TimerEvent: {}
+[1.805099] (-) TimerEvent: {}
+[1.905454] (-) TimerEvent: {}
+[2.005749] (-) TimerEvent: {}
+[2.106058] (-) TimerEvent: {}
+[2.206399] (-) TimerEvent: {}
+[2.307068] (-) TimerEvent: {}
+[2.410224] (-) TimerEvent: {}
+[2.510490] (-) TimerEvent: {}
+[2.610800] (-) TimerEvent: {}
+[2.711084] (-) TimerEvent: {}
+[2.811406] (-) TimerEvent: {}
+[2.911659] (-) TimerEvent: {}
+[3.011924] (-) TimerEvent: {}
+[3.112217] (-) TimerEvent: {}
+[3.212472] (-) TimerEvent: {}
+[3.312729] (-) TimerEvent: {}
+[3.412987] (-) TimerEvent: {}
+[3.513279] (-) TimerEvent: {}
+[3.613657] (-) TimerEvent: {}
+[3.714032] (-) TimerEvent: {}
+[3.814353] (-) TimerEvent: {}
+[3.914624] (-) TimerEvent: {}
+[4.014961] (-) TimerEvent: {}
+[4.116033] (-) TimerEvent: {}
+[4.216557] (-) TimerEvent: {}
+[4.316811] (-) TimerEvent: {}
+[4.417100] (-) TimerEvent: {}
+[4.517481] (-) TimerEvent: {}
+[4.617900] (-) TimerEvent: {}
+[4.718244] (-) TimerEvent: {}
+[4.818607] (-) TimerEvent: {}
+[4.918900] (-) TimerEvent: {}
+[5.019138] (-) TimerEvent: {}
+[5.119522] (-) TimerEvent: {}
+[5.219695] (-) TimerEvent: {}
+[5.319935] (-) TimerEvent: {}
+[5.419370] (bin_nodes) StderrLine: {'line': b'/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp: In function \xe2\x80\x98int main(int, char**)\xe2\x80\x99:\n'}
+[5.419734] (bin_nodes) StderrLine: {'line': b'/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:16:39: error: no matching function for call to \xe2\x80\x98moveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const char [4], std::shared_ptr<rclcpp::Node>&)\xe2\x80\x99\n'}
+[5.419881] (bin_nodes) StderrLine: {'line': b'   16 |     MoveGroupInterface arm("arm", node);\n'}
+[5.419986] (-) TimerEvent: {}
+[5.420015] (bin_nodes) StderrLine: {'line': b'      |                                       ^\n'}
+[5.420107] (bin_nodes) StderrLine: {'line': b'In file included from /home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:2:\n'}
+[5.420201] (bin_nodes) StderrLine: {'line': b'/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:159:3: note: candidate: \xe2\x80\x98moveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)\xe2\x80\x99\n'}
+[5.420295] (bin_nodes) StderrLine: {'line': b'  159 |   MoveGroupInterface(MoveGroupInterface&& other) noexcept;\n'}
+[5.420392] (bin_nodes) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~~\n'}
+[5.420466] (bin_nodes) StderrLine: {'line': b'/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:159:3: note:   candidate expects 1 argument, 2 provided\n'}
+[5.420529] (bin_nodes) StderrLine: {'line': b'/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:145:3: note: candidate: \xe2\x80\x98moveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)\xe2\x80\x99\n'}
+[5.420595] (bin_nodes) StderrLine: {'line': b'  145 |   MoveGroupInterface(const rclcpp::Node::SharedPtr& node, const std::string& group,\n'}
+[5.420643] (bin_nodes) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~~\n'}
+[5.420692] (bin_nodes) StderrLine: {'line': b'/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:145:53: note:   no known conversion for argument 1 from \xe2\x80\x98const char [4]\xe2\x80\x99 to \xe2\x80\x98const SharedPtr&\xe2\x80\x99 {aka \xe2\x80\x98const std::shared_ptr<rclcpp::Node>&\xe2\x80\x99}\n'}
+[5.420741] (bin_nodes) StderrLine: {'line': b'  145 |   MoveGroupInterface(const rclcpp::Node::SharedPtr& node, const std::string& group,\n'}
+[5.420778] (bin_nodes) StderrLine: {'line': b'      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\n'}
+[5.420852] (bin_nodes) StderrLine: {'line': b'/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:134:3: note: candidate: \xe2\x80\x98moveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const SharedPtr&, const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const rclcpp::Duration&)\xe2\x80\x99\n'}
+[5.420902] (bin_nodes) StderrLine: {'line': b'  134 |   MoveGroupInterface(const rclcpp::Node::SharedPtr& node, const Options& opt,\n'}
+[5.420941] (bin_nodes) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~~\n'}
+[5.420978] (bin_nodes) StderrLine: {'line': b'/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:134:53: note:   no known conversion for argument 1 from \xe2\x80\x98const char [4]\xe2\x80\x99 to \xe2\x80\x98const SharedPtr&\xe2\x80\x99 {aka \xe2\x80\x98const std::shared_ptr<rclcpp::Node>&\xe2\x80\x99}\n'}
+[5.421018] (bin_nodes) StderrLine: {'line': b'  134 |   MoveGroupInterface(const rclcpp::Node::SharedPtr& node, const Options& opt,\n'}
+[5.421054] (bin_nodes) StderrLine: {'line': b'      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\n'}
+[5.520132] (-) TimerEvent: {}
+[5.620339] (-) TimerEvent: {}
+[5.720582] (-) TimerEvent: {}
+[5.820801] (-) TimerEvent: {}
+[5.921018] (-) TimerEvent: {}
+[6.021286] (-) TimerEvent: {}
+[6.121542] (-) TimerEvent: {}
+[6.221814] (-) TimerEvent: {}
+[6.322073] (-) TimerEvent: {}
+[6.422336] (-) TimerEvent: {}
+[6.522653] (-) TimerEvent: {}
+[6.622942] (-) TimerEvent: {}
+[6.723203] (-) TimerEvent: {}
+[6.823564] (-) TimerEvent: {}
+[6.923777] (-) TimerEvent: {}
+[7.024029] (-) TimerEvent: {}
+[7.124292] (-) TimerEvent: {}
+[7.224606] (-) TimerEvent: {}
+[7.324893] (-) TimerEvent: {}
+[7.425146] (-) TimerEvent: {}
+[7.525412] (-) TimerEvent: {}
+[7.625737] (-) TimerEvent: {}
+[7.726023] (-) TimerEvent: {}
+[7.826208] (-) TimerEvent: {}
+[7.926569] (-) TimerEvent: {}
+[8.027080] (-) TimerEvent: {}
+[8.096931] (bin_nodes) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pick_and_place_fixed.dir/build.make:76: CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o] Error 1\n'}
+[8.097547] (bin_nodes) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pick_and_place_fixed.dir/all] Error 2\n'}
+[8.098042] (bin_nodes) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.101499] (bin_nodes) CommandEnded: {'returncode': 2}
+[8.113108] (bin_nodes) JobEnded: {'identifier': 'bin_nodes', 'rc': 2}
+[8.114342] (-) EventReactorShutdown: {}

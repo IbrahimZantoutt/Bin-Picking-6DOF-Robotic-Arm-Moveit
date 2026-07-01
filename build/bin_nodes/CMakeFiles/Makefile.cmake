@@ -1329,4 +1329,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/bin_nodes_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/MoveArm.dir/DependInfo.cmake"
+  "CMakeFiles/pick_and_place_fixed.dir/DependInfo.cmake"
   )

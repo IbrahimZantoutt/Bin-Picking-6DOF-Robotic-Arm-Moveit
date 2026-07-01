@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(moveit_ros_planning_interface REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(tf2 REQUIRED)
 
 add_executable(MoveArm src/MoveArm.cpp)
 target_include_directories(MoveArm PUBLIC
@@ -21,7 +22,18 @@ ament_target_dependencies(MoveArm
   moveit_ros_planning_interface
   geometry_msgs)
 
-install(TARGETS MoveArm
+add_executable(pick_and_place_fixed src/pick_and_place_fixed.cpp)
+target_include_directories(pick_and_place_fixed PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+target_compile_features(pick_and_place_fixed PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+ament_target_dependencies(pick_and_place_fixed
+  rclcpp
+  moveit_ros_planning_interface
+  geometry_msgs
+  tf2)
+
+install(TARGETS MoveArm pick_and_place_fixed
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
