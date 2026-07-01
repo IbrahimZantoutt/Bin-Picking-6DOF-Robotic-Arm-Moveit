@@ -249,7 +249,8 @@
 			[
 				"launch",
 				"urdf",
-				"rviz"
+				"rviz",
+				"worlds"
 			],
 			"type" : "directory"
 		},

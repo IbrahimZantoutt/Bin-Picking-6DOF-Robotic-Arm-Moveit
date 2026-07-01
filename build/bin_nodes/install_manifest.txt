@@ -2,6 +2,7 @@
 /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/launch/display.launch.py
 /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/urdf/robot.urdf
 /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/rviz/model.rviz
+/home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/worlds/world.sdf
 /home/ibrahim/BinPicking/install/bin_nodes/share/ament_index/resource_index/package_run_dependencies/bin_nodes
 /home/ibrahim/BinPicking/install/bin_nodes/share/ament_index/resource_index/parent_prefix_path/bin_nodes
 /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/ament_prefix_path.sh

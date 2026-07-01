@@ -3,6 +3,11 @@
 <robot name="robot_arm">
 
     <link name="robot_base">
+        <inertial>
+            <origin xyz="0 0 0.025" rpy="0 0 0"/>
+            <mass value="2.0"/>
+            <inertia ixx="0.007083" ixy="0" ixz="0" iyy="0.007083" iyz="0" izz="0.013333"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0.025" rpy="0 0 0"/>
             <geometry>
@@ -21,6 +26,11 @@
     </link>
 
     <link name="waist_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1.0"/>
+            <inertia ixx="0.002775" ixy="0" ixz="0" iyy="0.002775" iyz="0" izz="0.0018"/>
+        </inertial>
         <visual>
             <geometry>
                 <cylinder radius="0.06" length="0.15"/>
@@ -48,6 +58,11 @@
     <!-- J2 -->
 
     <link name="shoulder_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="1.5708 0 1.5708"/>
+            <mass value="0.5"/>
+            <inertia ixx="0.0010167" ixy="0" ixz="0" iyy="0.0010167" iyz="0" izz="0.0004"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="1.5708 0 1.5708"/>
             <geometry>
@@ -74,6 +89,11 @@
     </joint>
 
     <link name="shoulder_arm">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.8"/>
+            <inertia ixx="0.008487" ixy="0" ixz="0" iyy="0.008487" iyz="0" izz="0.00064"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
@@ -100,6 +120,11 @@
     <!-- J3 -->
 
     <link name="elbow_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="1.5708 0 1.5708"/>
+            <mass value="0.5"/>
+            <inertia ixx="0.0012667" ixy="0" ixz="0" iyy="0.0012667" iyz="0" izz="0.0004"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="1.5708 0 1.5708"/>
             <geometry>
@@ -128,6 +153,11 @@
 
 
     <link name="elbow_arm">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.8"/>
+            <inertia ixx="0.008487" ixy="0" ixz="0" iyy="0.008487" iyz="0" izz="0.00064"/>
+        </inertial>
         <visual>
             <geometry>
                 <cylinder radius="0.04" length="0.35"/>
@@ -153,6 +183,11 @@
     <!-- J4 -->
 
     <link name="wrist_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.3"/>
+            <inertia ixx="0.0001825" ixy="0" ixz="0" iyy="0.0001825" iyz="0" izz="0.00024"/>
+        </inertial>
         <visual>
             <geometry>
                 <cylinder radius="0.04" length="0.05"/>
@@ -180,6 +215,11 @@
     <!-- J5 -->
 
     <link name="wrist_pitch_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="1.5708 0 1.5708"/>
+            <mass value="0.2"/>
+            <inertia ixx="0.00012667" ixy="0" ixz="0" iyy="0.00012667" iyz="0" izz="0.00004"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="1.5708 0 1.5708"/>
             <geometry>
@@ -206,6 +246,11 @@
     </joint>
 
     <link name="wrist_arm">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.2"/>
+            <inertia ixx="0.00012667" ixy="0" ixz="0" iyy="0.00012667" iyz="0" izz="0.00004"/>
+        </inertial>
         <visual>
             <geometry>
                 <cylinder radius="0.02" length="0.08"/>
@@ -231,6 +276,11 @@
     <!-- J6 -->
 
      <link name="wrist_yaw_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.1"/>
+            <inertia ixx="0.000016" ixy="0" ixz="0" iyy="0.000016" iyz="0" izz="0.000016"/>
+        </inertial>
         <visual>
             <geometry>
                 <sphere radius="0.02"/>
@@ -258,6 +308,11 @@
     <!-- tool -->
 
     <link name="tool_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.05"/>
+            <inertia ixx="0.00000792" ixy="0" ixz="0" iyy="0.00000792" iyz="0" izz="0.0000025"/>
+        </inertial>
         <visual>
             <geometry>
                 <cylinder radius="0.01" length="0.04"/>
@@ -282,6 +337,11 @@
 
 
      <link name="gripper_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+            <mass value="0.05"/>
+            <inertia ixx="0.00001135" ixy="0" ixz="0" iyy="0.00001135" iyz="0" izz="0.000001875"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="1.5708 0 0"/>
             <geometry>
@@ -306,6 +366,11 @@
     </joint>
 
     <link name="gripperfinger_left_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.02"/>
+            <inertia ixx="0.00000276" ixy="0" ixz="0" iyy="0.00000276" iyz="0" izz="0.0000001875"/>
+        </inertial>
         <visual>
             <geometry>
                 <box size="0.0075 0.0075 0.04"/>
@@ -322,6 +387,11 @@
     </link>
 
     <link name="gripperfinger_right_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.02"/>
+            <inertia ixx="0.00000276" ixy="0" ixz="0" iyy="0.00000276" iyz="0" izz="0.0000001875"/>
+        </inertial>
         <visual>
             <geometry>
                 <box size="0.0075 0.0075 0.04"/>

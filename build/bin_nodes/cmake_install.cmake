@@ -67,6 +67,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/ibrahim/BinPicking/src/bin_nodes/launch"
     "/home/ibrahim/BinPicking/src/bin_nodes/urdf"
     "/home/ibrahim/BinPicking/src/bin_nodes/rviz"
+    "/home/ibrahim/BinPicking/src/bin_nodes/worlds"
     )
 endif()
 

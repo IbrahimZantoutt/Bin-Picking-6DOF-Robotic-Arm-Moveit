@@ -16,6 +16,8 @@
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/move_group.launch.py
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/static_virtual_joint_tfs.launch.py
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/spawn_controllers.launch.py
+/home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/__pycache__/gazebo.launch.cpython-310.pyc
+/home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/gazebo.launch.py
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/rsp.launch.py
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/moveit_rviz.launch.py
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/warehouse_db.launch.py

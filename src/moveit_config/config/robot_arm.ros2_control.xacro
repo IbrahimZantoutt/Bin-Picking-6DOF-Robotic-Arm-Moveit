@@ -1,12 +1,18 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <xacro:macro name="robot_arm_ros2_control" params="name initial_positions_file">
+    <xacro:macro name="robot_arm_ros2_control" params="name initial_positions_file use_gazebo:=false">
         <xacro:property name="initial_positions" value="${load_yaml(initial_positions_file)['initial_positions']}"/>
 
         <ros2_control name="${name}" type="system">
             <hardware>
-                <!-- By default, set up controllers for simulation. This won't work on real hardware -->
-                <plugin>mock_components/GenericSystem</plugin>
+                <xacro:if value="${use_gazebo}">
+                    <!-- Gazebo Classic: the controller_manager runs inside Gazebo -->
+                    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+                </xacro:if>
+                <xacro:unless value="${use_gazebo}">
+                    <!-- Mock hardware for the RViz-only demo (no physics) -->
+                    <plugin>mock_components/GenericSystem</plugin>
+                </xacro:unless>
             </hardware>
             <joint name="j1_waist">
                 <command_interface name="position"/>
