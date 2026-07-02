@@ -107,12 +107,35 @@ def generate_launch_description():
             use_sim_time,
         ],
     )
+    #camera
+    camera_urdf = os.path.join(
+    get_package_share_directory("bin_nodes"), "urdf", "camera.urdf"
+    )
+    with open(camera_urdf) as f:
+        camera_description_xml = f.read()
+
+    camera_state_publisher = Node(
+        package="robot_state_publisher",
+        executable="robot_state_publisher",
+        namespace="overhead_camera",
+        output="screen",
+        parameters=[{"robot_description": camera_description_xml}, use_sim_time],
+    )
+
+    spawn_camera = Node(
+        package="gazebo_ros",
+        executable="spawn_entity.py",
+        arguments=["-file", camera_urdf, "-entity", "overhead_camera"],
+        output="screen",
+    )
 
     return LaunchDescription(
         [
             gazebo,
             robot_state_publisher,
+            camera_state_publisher,
             spawn_entity,
+            spawn_camera,
             move_group,
             rviz,
             # Chain the spawners so they start only after the robot is spawned.
