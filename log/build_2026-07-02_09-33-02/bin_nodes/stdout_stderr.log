@@ -1,0 +1,12 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o[0m
+[ 75%] Built target MoveArm
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:[m[K In lambda function:
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:147:74:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+  147 |         planning_scene_interface.applyCollisionObjects(collision_objects)
+      |                                                                          [01;31m[K^[m[K
+      |                                                                          [32m[K;[m[K
+  148 |     [32m[K}[m[K;
+      |     [32m[K~[m[K                                                                     
+gmake[2]: *** [CMakeFiles/pick_and_place_fixed.dir/build.make:76: CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pick_and_place_fixed.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

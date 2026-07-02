@@ -4,6 +4,8 @@
 #include <tf2/LinearMath/Quaternion.h>
 #include <linkattacher_msgs/srv/attach_link.hpp>
 #include <linkattacher_msgs/srv/detach_link.hpp>
+#include <moveit/planning_scene_interface/planning_scene_interface.h>
+#include <moveit_msgs/msg/collision_object.hpp>
 #include <chrono>
 #include <thread>
 
@@ -24,6 +26,12 @@ int main(int argc, char **argv){
     arm.setMaxVelocityScalingFactor(0.3);
     arm.setMaxAccelerationScalingFactor(0.3);
     arm.setPlanningTime(5.0);
+
+
+    MoveGroupInterface gripper(node, "gripper");
+    gripper.setMaxVelocityScalingFactor(0.3);
+    gripper.setMaxAccelerationScalingFactor(0.3);
+    gripper.setPlanningTime(5.0);
 
     // Helper: plan, and if planning succeeds, execute. Returns true on success.
     auto plan_and_execute = [&](const std::string & what) {
@@ -82,6 +90,15 @@ int main(int argc, char **argv){
         return res->success;
     };
 
+    auto setGripper = [&](double g1, double g2){
+        gripper.setJointValueTarget({std::map<std::string, double>{{"gripperfinger_left_joint", g1}, {"gripperfinger_right_joint", g2}}});
+
+        MoveGroupInterface::Plan plan;
+        if(gripper.plan(plan)==moveit::core::MoveItErrorCode::SUCCESS){
+            gripper.execute(plan);
+        }
+    };
+
     auto goToPos = [&](double x, double y, double z, double roll, double pitch, double yaw){
         geometry_msgs::msg::Pose target_pose;
         target_pose.position.x = x;
@@ -94,20 +111,68 @@ int main(int argc, char **argv){
         target_pose.orientation.z = q.z();
         target_pose.orientation.w = q.w();
         arm.setPoseTarget(target_pose);
-        plan_and_execute("pose target");
+        return plan_and_execute("pose target");
     };
 
     auto pick = [&](){
         //goToPos(0.304, 0.339, 0.247,2.863, 1.389, -3.141);  better to add when added collision aware movement
-        goToPos(0.34, 0.347, 0.241,3.091, -1.412, 0.373);
-        attach("robot_arm", "wrist_yaw_link", "green_cube", "link");
+        if(goToPos(0.391, 0.347, 0.28,3.125, 0.111, 3.129)){
+            attach("robot_arm", "wrist_yaw_link", "green_cube", "link");
+            setGripper(0.01, 0.01);
+        }
     };
 
     auto place = [&](){
         //goToPos(0.374, -0.215, 0.327,-0.898, -1.442, 2.633);
-        goToPos(0.313, -0.309, 0.379,3.141, 1.390, 3.142);
-        detach("robot_arm", "wrist_yaw_link", "green_cube", "link");
+        if(goToPos(0.313, -0.309, 0.379,3.141, 1.390, 3.142)){
+            detach("robot_arm", "wrist_yaw_link", "green_cube", "link");
+            setGripper(0.0, 0.0);
+        }
     };
+
+    auto addCollisionObjects = [&](){
+        moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
+        std::vector<moveit_msgs::msg::CollisionObject> collision_objects;
+        collision_objects.resize(3);
+
+        collision_objects[0].id = "table1";
+        collision_objects[0].header.frame_id = "world";
+        collision_objects[0].primitives.resize(1);
+        collision_objects[0].primitives[0].type = shape_msgs::msg::SolidPrimitive::BOX;
+        collision_objects[0].primitives[0].dimensions = {0.4, 0.6, 0.2};
+        collision_objects[0].primitive_poses.resize(1);
+        collision_objects[0].primitive_poses[0].position.x = 0.4;
+        collision_objects[0].primitive_poses[0].position.y = -0.35;
+        collision_objects[0].primitive_poses[0].position.z = 0.1;
+        collision_objects[0].operation = moveit_msgs::msg::CollisionObject::ADD;
+
+        collision_objects[1].id = "table2";
+        collision_objects[1].header.frame_id = "world";
+        collision_objects[1].primitives.resize(1);
+        collision_objects[1].primitives[0].type = shape_msgs::msg::SolidPrimitive::BOX;
+        collision_objects[1].primitives[0].dimensions = {0.4, 0.6, 0.2};
+        collision_objects[1].primitive_poses.resize(1);
+        collision_objects[1].primitive_poses[0].position.x = 0.4;
+        collision_objects[1].primitive_poses[0].position.y = 0.35;
+        collision_objects[1].primitive_poses[0].position.z = 0.1;
+        collision_objects[1].operation = moveit_msgs::msg::CollisionObject::ADD;
+
+         collision_objects[2].id = "bin";
+        collision_objects[2].header.frame_id = "world";
+        collision_objects[2].primitives.resize(1);
+        collision_objects[2].primitives[0].type = shape_msgs::msg::SolidPrimitive::BOX;
+        collision_objects[2].primitives[0].dimensions = {0.24, 0.34, 0.1};
+        collision_objects[2].primitive_poses.resize(1);
+        collision_objects[2].primitive_poses[0].position.x = 0.4;
+        collision_objects[2].primitive_poses[0].position.y = -0.35;
+        collision_objects[2].primitive_poses[0].position.z = 0.2;
+        collision_objects[2].operation = moveit_msgs::msg::CollisionObject::ADD;
+
+
+        planning_scene_interface.applyCollisionObjects(collision_objects);
+    };
+
+    addCollisionObjects();
 
     pick();
 

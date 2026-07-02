@@ -1,0 +1,317 @@
+[0.309s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.309s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7173e68d5150>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7173e68d4b80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7173e68d4b80>>)
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.682s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ibrahim/BinPicking'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.697s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extensions ['ignore', 'ignore_ament_install']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extension 'ignore'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extension 'ignore_ament_install'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extensions ['colcon_pkg']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extension 'colcon_pkg'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extensions ['colcon_meta']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extension 'colcon_meta'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extensions ['ros']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extension 'ros'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extensions ['cmake', 'python']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extension 'cmake'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extension 'python'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extensions ['python_setup_py']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher) by extension 'python_setup_py'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/linkattacher_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/linkattacher_msgs) by extension 'ignore'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/linkattacher_msgs) by extension 'ignore_ament_install'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/linkattacher_msgs) by extensions ['colcon_pkg']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/linkattacher_msgs) by extension 'colcon_pkg'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/linkattacher_msgs) by extensions ['colcon_meta']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/linkattacher_msgs) by extension 'colcon_meta'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/linkattacher_msgs) by extensions ['ros']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/linkattacher_msgs) by extension 'ros'
+[0.704s] DEBUG:colcon.colcon_core.package_identification:Package 'src/IFRA_LinkAttacher/linkattacher_msgs' with type 'ros.ament_cmake' and name 'linkattacher_msgs'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/ros2_LinkAttacher) by extensions ['ignore', 'ignore_ament_install']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/ros2_LinkAttacher) by extension 'ignore'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/ros2_LinkAttacher) by extension 'ignore_ament_install'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/ros2_LinkAttacher) by extensions ['colcon_pkg']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/ros2_LinkAttacher) by extension 'colcon_pkg'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/ros2_LinkAttacher) by extensions ['colcon_meta']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/ros2_LinkAttacher) by extension 'colcon_meta'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/ros2_LinkAttacher) by extensions ['ros']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/IFRA_LinkAttacher/ros2_LinkAttacher) by extension 'ros'
+[0.705s] DEBUG:colcon.colcon_core.package_identification:Package 'src/IFRA_LinkAttacher/ros2_LinkAttacher' with type 'ros.ament_cmake' and name 'ros2_linkattacher'
+[0.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/bin_nodes) by extensions ['ignore', 'ignore_ament_install']
+[0.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/bin_nodes) by extension 'ignore'
+[0.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/bin_nodes) by extension 'ignore_ament_install'
+[0.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/bin_nodes) by extensions ['colcon_pkg']
+[0.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/bin_nodes) by extension 'colcon_pkg'
+[0.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/bin_nodes) by extensions ['colcon_meta']
+[0.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/bin_nodes) by extension 'colcon_meta'
+[0.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/bin_nodes) by extensions ['ros']
+[0.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/bin_nodes) by extension 'ros'
+[0.708s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bin_nodes' with type 'ros.ament_cmake' and name 'bin_nodes'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_config) by extension 'ignore'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_config) by extension 'ignore_ament_install'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_config) by extensions ['colcon_pkg']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_config) by extension 'colcon_pkg'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_config) by extensions ['colcon_meta']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_config) by extension 'colcon_meta'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_config) by extensions ['ros']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_config) by extension 'ros'
+[0.710s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_config' with type 'ros.ament_cmake' and name 'moveit_config'
+[0.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.773s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.773s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.784s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/ibrahim/BinPicking/install
+[0.785s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ibrahim/MoveItArm/install
+[0.786s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ibrahim/RobotArmExpanded/install
+[0.787s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ibrahim/RobotArm/install
+[0.788s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ibrahim/TF2Sample/install
+[0.789s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ibrahim/RobotNav/install
+[0.789s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ibrahim/RobotMonitor/install
+[0.790s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ibrahim/ros2_ws/install
+[0.794s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 449 installed packages in /opt/ros/humble
+[0.795s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.942s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_args' from command line to 'None'
+[0.942s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_target' from command line to 'None'
+[0.942s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.942s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.942s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.942s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.942s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.942s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.942s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.942s] DEBUG:colcon.colcon_core.verb:Building package 'linkattacher_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ibrahim/BinPicking/build/linkattacher_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ibrahim/BinPicking/install/linkattacher_msgs', 'merge_install': False, 'path': '/home/ibrahim/BinPicking/src/IFRA_LinkAttacher/linkattacher_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'bin_nodes' build argument 'cmake_args' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'bin_nodes' build argument 'cmake_target' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'bin_nodes' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'bin_nodes' build argument 'cmake_clean_cache' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'bin_nodes' build argument 'cmake_clean_first' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'bin_nodes' build argument 'cmake_force_configure' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'bin_nodes' build argument 'ament_cmake_args' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'bin_nodes' build argument 'catkin_cmake_args' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'bin_nodes' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.943s] DEBUG:colcon.colcon_core.verb:Building package 'bin_nodes' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ibrahim/BinPicking/build/bin_nodes', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ibrahim/BinPicking/install/bin_nodes', 'merge_install': False, 'path': '/home/ibrahim/BinPicking/src/bin_nodes', 'symlink_install': False, 'test_result_base': None}
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'ros2_linkattacher' build argument 'cmake_args' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'ros2_linkattacher' build argument 'cmake_target' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'ros2_linkattacher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'ros2_linkattacher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'ros2_linkattacher' build argument 'cmake_clean_first' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'ros2_linkattacher' build argument 'cmake_force_configure' from command line to 'False'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'ros2_linkattacher' build argument 'ament_cmake_args' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'ros2_linkattacher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.943s] Level 5:colcon.colcon_core.verb:set package 'ros2_linkattacher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.943s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_linkattacher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ibrahim/BinPicking/build/ros2_linkattacher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ibrahim/BinPicking/install/ros2_linkattacher', 'merge_install': False, 'path': '/home/ibrahim/BinPicking/src/IFRA_LinkAttacher/ros2_LinkAttacher', 'symlink_install': False, 'test_result_base': None}
+[0.944s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.944s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.944s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.944s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.944s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.944s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.944s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.944s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.944s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.944s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ibrahim/BinPicking/build/moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ibrahim/BinPicking/install/moveit_config', 'merge_install': False, 'path': '/home/ibrahim/BinPicking/src/moveit_config', 'symlink_install': False, 'test_result_base': None}
+[0.944s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.945s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.945s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ibrahim/BinPicking/src/IFRA_LinkAttacher/linkattacher_msgs' with build type 'ament_cmake'
+[0.946s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ibrahim/BinPicking/src/IFRA_LinkAttacher/linkattacher_msgs'
+[0.952s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.952s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.952s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ibrahim/BinPicking/build/linkattacher_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/linkattacher_msgs -- -j16 -l16
+[1.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ibrahim/BinPicking/build/linkattacher_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/linkattacher_msgs -- -j16 -l16
+[1.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ibrahim/BinPicking/build/linkattacher_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/BinPicking/build/linkattacher_msgs
+[1.447s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(linkattacher_msgs)
+[1.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ibrahim/BinPicking/build/linkattacher_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/BinPicking/build/linkattacher_msgs
+[1.455s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs' for CMake module files
+[1.456s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs' for CMake config files
+[1.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('linkattacher_msgs', 'cmake_prefix_path')
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.ps1'
+[1.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.dsv'
+[1.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.sh'
+[1.461s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs/lib'
+[1.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('linkattacher_msgs', 'ld_library_path_lib')
+[1.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.ps1'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.dsv'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.sh'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs/bin'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs/lib/pkgconfig/linkattacher_msgs.pc'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs/lib/python3.10/site-packages'
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs/bin'
+[1.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/package.ps1'
+[1.465s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/package.dsv'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/package.sh'
+[1.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/package.bash'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/package.zsh'
+[1.469s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ibrahim/BinPicking/install/linkattacher_msgs/share/colcon-core/packages/linkattacher_msgs)
+[1.470s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(linkattacher_msgs)
+[1.470s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs' for CMake module files
+[1.471s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs' for CMake config files
+[1.472s] Level 1:colcon.colcon_core.shell:create_environment_hook('linkattacher_msgs', 'cmake_prefix_path')
+[1.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.ps1'
+[1.473s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.dsv'
+[1.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.sh'
+[1.474s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs/lib'
+[1.474s] Level 1:colcon.colcon_core.shell:create_environment_hook('linkattacher_msgs', 'ld_library_path_lib')
+[1.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.ps1'
+[1.475s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.dsv'
+[1.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.sh'
+[1.475s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs/bin'
+[1.475s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs/lib/pkgconfig/linkattacher_msgs.pc'
+[1.476s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs/lib/python3.10/site-packages'
+[1.476s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/linkattacher_msgs/bin'
+[1.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/package.ps1'
+[1.477s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/package.dsv'
+[1.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/package.sh'
+[1.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/package.bash'
+[1.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/package.zsh'
+[1.479s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ibrahim/BinPicking/install/linkattacher_msgs/share/colcon-core/packages/linkattacher_msgs)
+[1.479s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ibrahim/BinPicking/src/bin_nodes' with build type 'ament_cmake'
+[1.480s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ibrahim/BinPicking/src/bin_nodes'
+[1.480s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.480s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.488s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ibrahim/BinPicking/src/IFRA_LinkAttacher/ros2_LinkAttacher' with build type 'ament_cmake'
+[1.489s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ibrahim/BinPicking/src/IFRA_LinkAttacher/ros2_LinkAttacher'
+[1.489s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.489s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ibrahim/BinPicking/build/ros2_linkattacher': CMAKE_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/BinPicking/install/ros2_linkattacher:/home/ibrahim/BinPicking/install/moveit_config:/home/ibrahim/BinPicking/install/bin_nodes:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:/home/ibrahim/BinPicking/install/ros2_linkattacher/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ibrahim/BinPicking/build/ros2_linkattacher -- -j16 -l16
+[1.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ibrahim/BinPicking/build/bin_nodes': CMAKE_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/BinPicking/install/ros2_linkattacher:/home/ibrahim/BinPicking/install/moveit_config:/home/ibrahim/BinPicking/install/bin_nodes:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:/home/ibrahim/BinPicking/install/ros2_linkattacher/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16
+[1.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ibrahim/BinPicking/build/ros2_linkattacher' returned '0': CMAKE_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/BinPicking/install/ros2_linkattacher:/home/ibrahim/BinPicking/install/moveit_config:/home/ibrahim/BinPicking/install/bin_nodes:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:/home/ibrahim/BinPicking/install/ros2_linkattacher/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ibrahim/BinPicking/build/ros2_linkattacher -- -j16 -l16
+[1.679s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ibrahim/BinPicking/build/ros2_linkattacher': CMAKE_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/BinPicking/install/ros2_linkattacher:/home/ibrahim/BinPicking/install/moveit_config:/home/ibrahim/BinPicking/install/bin_nodes:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:/home/ibrahim/BinPicking/install/ros2_linkattacher/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ibrahim/BinPicking/build/ros2_linkattacher
+[1.693s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_linkattacher)
+[1.694s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher' for CMake module files
+[1.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ibrahim/BinPicking/build/ros2_linkattacher' returned '0': CMAKE_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/BinPicking/install/ros2_linkattacher:/home/ibrahim/BinPicking/install/moveit_config:/home/ibrahim/BinPicking/install/bin_nodes:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:/home/ibrahim/BinPicking/install/ros2_linkattacher/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ibrahim/BinPicking/build/ros2_linkattacher
+[1.695s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher' for CMake config files
+[1.695s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_linkattacher', 'cmake_prefix_path')
+[1.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/cmake_prefix_path.ps1'
+[1.696s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/cmake_prefix_path.dsv'
+[1.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/cmake_prefix_path.sh'
+[1.697s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher/lib'
+[1.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_linkattacher', 'ld_library_path_lib')
+[1.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/ld_library_path_lib.ps1'
+[1.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/ld_library_path_lib.dsv'
+[1.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/ld_library_path_lib.sh'
+[1.699s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher/bin'
+[1.699s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher/lib/pkgconfig/ros2_linkattacher.pc'
+[1.699s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher/lib/python3.10/site-packages'
+[1.699s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher/bin'
+[1.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/package.ps1'
+[1.700s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/package.dsv'
+[1.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/package.sh'
+[1.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/package.bash'
+[1.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/package.zsh'
+[1.702s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ibrahim/BinPicking/install/ros2_linkattacher/share/colcon-core/packages/ros2_linkattacher)
+[1.702s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_linkattacher)
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher' for CMake module files
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher' for CMake config files
+[1.703s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_linkattacher', 'cmake_prefix_path')
+[1.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/cmake_prefix_path.ps1'
+[1.704s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/cmake_prefix_path.dsv'
+[1.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/cmake_prefix_path.sh'
+[1.705s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher/lib'
+[1.705s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_linkattacher', 'ld_library_path_lib')
+[1.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/ld_library_path_lib.ps1'
+[1.706s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/ld_library_path_lib.dsv'
+[1.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/hook/ld_library_path_lib.sh'
+[1.706s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher/bin'
+[1.707s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher/lib/pkgconfig/ros2_linkattacher.pc'
+[1.707s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher/lib/python3.10/site-packages'
+[1.707s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/ros2_linkattacher/bin'
+[1.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/package.ps1'
+[1.708s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/package.dsv'
+[1.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/package.sh'
+[1.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/package.bash'
+[1.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/ros2_linkattacher/share/ros2_linkattacher/package.zsh'
+[1.710s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ibrahim/BinPicking/install/ros2_linkattacher/share/colcon-core/packages/ros2_linkattacher)
+[7.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ibrahim/BinPicking/build/bin_nodes' returned '2': CMAKE_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/BinPicking/install/ros2_linkattacher:/home/ibrahim/BinPicking/install/moveit_config:/home/ibrahim/BinPicking/install/bin_nodes:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:/home/ibrahim/BinPicking/install/ros2_linkattacher/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16
+[7.826s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bin_nodes)
+[7.827s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/bin_nodes' for CMake module files
+[7.827s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/bin_nodes' for CMake config files
+[7.828s] Level 1:colcon.colcon_core.shell:create_environment_hook('bin_nodes', 'cmake_prefix_path')
+[7.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/hook/cmake_prefix_path.ps1'
+[7.830s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/hook/cmake_prefix_path.dsv'
+[7.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/hook/cmake_prefix_path.sh'
+[7.831s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/bin_nodes/lib'
+[7.831s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/bin_nodes/bin'
+[7.831s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/bin_nodes/lib/pkgconfig/bin_nodes.pc'
+[7.831s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/bin_nodes/lib/python3.10/site-packages'
+[7.832s] Level 1:colcon.colcon_core.environment:checking '/home/ibrahim/BinPicking/install/bin_nodes/bin'
+[7.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/package.ps1'
+[7.832s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/package.dsv'
+[7.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/package.sh'
+[7.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/package.bash'
+[7.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/package.zsh'
+[7.835s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ibrahim/BinPicking/install/bin_nodes/share/colcon-core/packages/bin_nodes)
+[7.845s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.846s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.846s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[7.846s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.898s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[7.898s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.898s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.898s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.898s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[7.899s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.899s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ibrahim/BinPicking/install/local_setup.ps1'
+[7.901s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ibrahim/BinPicking/install/_local_setup_util_ps1.py'
+[7.902s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ibrahim/BinPicking/install/setup.ps1'
+[7.904s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ibrahim/BinPicking/install/local_setup.sh'
+[7.905s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ibrahim/BinPicking/install/_local_setup_util_sh.py'
+[7.905s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ibrahim/BinPicking/install/setup.sh'
+[7.907s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ibrahim/BinPicking/install/local_setup.bash'
+[7.908s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ibrahim/BinPicking/install/setup.bash'
+[7.910s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ibrahim/BinPicking/install/local_setup.zsh'
+[7.911s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ibrahim/BinPicking/install/setup.zsh'

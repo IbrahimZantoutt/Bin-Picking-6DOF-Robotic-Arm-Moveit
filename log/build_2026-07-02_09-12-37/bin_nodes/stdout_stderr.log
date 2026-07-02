@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target pick_and_place_fixed[0m
+[ 50%] Built target MoveArm
+[ 75%] [32mBuilding CXX object CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o[0m
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:[m[K In lambda function:
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:130:37:[m[K [01;31m[Kerror: [m[K‘[01m[KPlanningSceneInterface[m[K’ is not a member of ‘[01m[Kmoveit::planning_interface[m[K’
+  130 |         moveit::planning_interface::[01;31m[KPlanningSceneInterface[m[K planning_scene_interface;
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:148:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[KaddCollisionObjects[m[K’
+  148 |     [01;31m[KaddCollisionObjects[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pick_and_place_fixed.dir/build.make:76: CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pick_and_place_fixed.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
