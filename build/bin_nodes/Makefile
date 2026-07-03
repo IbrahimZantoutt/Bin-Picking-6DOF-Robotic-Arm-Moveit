@@ -223,6 +223,19 @@ pick_and_place_fixed/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_fixed.dir/build.make CMakeFiles/pick_and_place_fixed.dir/build
 .PHONY : pick_and_place_fixed/fast
 
+#=============================================================================
+# Target rules for targets named VisionNode
+
+# Build rule for target.
+VisionNode: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VisionNode
+.PHONY : VisionNode
+
+# fast build rule for target.
+VisionNode/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VisionNode.dir/build.make CMakeFiles/VisionNode.dir/build
+.PHONY : VisionNode/fast
+
 src/MoveArm.o: src/MoveArm.cpp.o
 .PHONY : src/MoveArm.o
 
@@ -246,6 +259,30 @@ src/MoveArm.s: src/MoveArm.cpp.s
 src/MoveArm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MoveArm.dir/build.make CMakeFiles/MoveArm.dir/src/MoveArm.cpp.s
 .PHONY : src/MoveArm.cpp.s
+
+src/VisionNode.o: src/VisionNode.cpp.o
+.PHONY : src/VisionNode.o
+
+# target to build an object file
+src/VisionNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VisionNode.dir/build.make CMakeFiles/VisionNode.dir/src/VisionNode.cpp.o
+.PHONY : src/VisionNode.cpp.o
+
+src/VisionNode.i: src/VisionNode.cpp.i
+.PHONY : src/VisionNode.i
+
+# target to preprocess a source file
+src/VisionNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VisionNode.dir/build.make CMakeFiles/VisionNode.dir/src/VisionNode.cpp.i
+.PHONY : src/VisionNode.cpp.i
+
+src/VisionNode.s: src/VisionNode.cpp.s
+.PHONY : src/VisionNode.s
+
+# target to generate assembly for a file
+src/VisionNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VisionNode.dir/build.make CMakeFiles/VisionNode.dir/src/VisionNode.cpp.s
+.PHONY : src/VisionNode.cpp.s
 
 src/pick_and_place_fixed.o: src/pick_and_place_fixed.cpp.o
 .PHONY : src/pick_and_place_fixed.o
@@ -287,10 +324,14 @@ help:
 	@echo "... bin_nodes_uninstall"
 	@echo "... uninstall"
 	@echo "... MoveArm"
+	@echo "... VisionNode"
 	@echo "... pick_and_place_fixed"
 	@echo "... src/MoveArm.o"
 	@echo "... src/MoveArm.i"
 	@echo "... src/MoveArm.s"
+	@echo "... src/VisionNode.o"
+	@echo "... src/VisionNode.i"
+	@echo "... src/VisionNode.s"
 	@echo "... src/pick_and_place_fixed.o"
 	@echo "... src/pick_and_place_fixed.i"
 	@echo "... src/pick_and_place_fixed.s"

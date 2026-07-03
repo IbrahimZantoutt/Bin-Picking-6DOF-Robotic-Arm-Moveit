@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-008a8f929b62c24f2c5d.json",
+					"jsonFile" : "directory-.-1137c2f242578fa15851.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -19,7 +19,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -37,7 +38,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -46,8 +48,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MoveArm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MoveArm-662badc6fa702c72c74e.json",
+					"jsonFile" : "target-MoveArm-db39c728069faa9157f4.json",
 					"name" : "MoveArm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VisionNode::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VisionNode-2c4cfc2e2f5bb05e9c7a.json",
+					"name" : "VisionNode",
 					"projectIndex" : 0
 				},
 				{
@@ -60,7 +69,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "pick_and_place_fixed::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pick_and_place_fixed-1a8bc79ab87f38ffa09f.json",
+					"jsonFile" : "target-pick_and_place_fixed-8762d3f865dfab7a3630.json",
 					"name" : "pick_and_place_fixed",
 					"projectIndex" : 0
 				},

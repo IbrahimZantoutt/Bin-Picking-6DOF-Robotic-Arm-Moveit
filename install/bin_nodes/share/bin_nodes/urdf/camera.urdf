@@ -20,7 +20,7 @@
     <joint name="camera_mount_joint" type="fixed">
         <parent link="world"/>
         <child link="camera_link"/>
-        <origin xyz="0.4 0 1.4" rpy="0 1.5708 0"/>
+        <origin xyz="0.4 0.35 1.1" rpy="0 1.5708 0"/>
     </joint>
 
     <link name="camera_optical_frame"/>

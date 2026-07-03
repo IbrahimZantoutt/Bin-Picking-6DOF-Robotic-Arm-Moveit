@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/ibrahim/BinPicking/build/bin_nodes
 # The main recursive "all" target.
 all: CMakeFiles/MoveArm.dir/all
 all: CMakeFiles/pick_and_place_fixed.dir/all
+all: CMakeFiles/VisionNode.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/bin_nodes_uninstall.dir/clean
 clean: CMakeFiles/MoveArm.dir/clean
 clean: CMakeFiles/pick_and_place_fixed.dir/clean
+clean: CMakeFiles/VisionNode.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -163,7 +165,7 @@ CMakeFiles/MoveArm.dir/clean:
 CMakeFiles/pick_and_place_fixed.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_fixed.dir/build.make CMakeFiles/pick_and_place_fixed.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_fixed.dir/build.make CMakeFiles/pick_and_place_fixed.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles --progress-num=3,4 "Built target pick_and_place_fixed"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles --progress-num=5,6 "Built target pick_and_place_fixed"
 .PHONY : CMakeFiles/pick_and_place_fixed.dir/all
 
 # Build rule for subdir invocation for target.
@@ -181,6 +183,32 @@ pick_and_place_fixed: CMakeFiles/pick_and_place_fixed.dir/rule
 CMakeFiles/pick_and_place_fixed.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_fixed.dir/build.make CMakeFiles/pick_and_place_fixed.dir/clean
 .PHONY : CMakeFiles/pick_and_place_fixed.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/VisionNode.dir
+
+# All Build rule for target.
+CMakeFiles/VisionNode.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VisionNode.dir/build.make CMakeFiles/VisionNode.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VisionNode.dir/build.make CMakeFiles/VisionNode.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles --progress-num=3,4 "Built target VisionNode"
+.PHONY : CMakeFiles/VisionNode.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/VisionNode.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/VisionNode.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ibrahim/BinPicking/build/bin_nodes/CMakeFiles 0
+.PHONY : CMakeFiles/VisionNode.dir/rule
+
+# Convenience name for target.
+VisionNode: CMakeFiles/VisionNode.dir/rule
+.PHONY : VisionNode
+
+# clean rule for target.
+CMakeFiles/VisionNode.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VisionNode.dir/build.make CMakeFiles/VisionNode.dir/clean
+.PHONY : CMakeFiles/VisionNode.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

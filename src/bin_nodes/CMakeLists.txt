@@ -14,6 +14,11 @@ find_package(tf2 REQUIRED)
 find_package(linkattacher_msgs REQUIRED)
 find_package(moveit_msgs REQUIRED)
 find_package(shape_msgs REQUIRED)
+find_package(image_geometry REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(sensor_msgs REQUIRED)
+
 
 add_executable(MoveArm src/MoveArm.cpp)
 target_include_directories(MoveArm PUBLIC
@@ -37,7 +42,17 @@ ament_target_dependencies(pick_and_place_fixed
   tf2
   linkattacher_msgs)
 
-install(TARGETS MoveArm pick_and_place_fixed
+add_executable(VisionNode src/VisionNode.cpp)
+target_compile_features(VisionNode PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+ament_target_dependencies(VisionNode
+  rclcpp
+  cv_bridge
+  sensor_msgs
+  OpenCV
+  image_geometry
+  geometry_msgs)
+
+install(TARGETS MoveArm pick_and_place_fixed VisionNode
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

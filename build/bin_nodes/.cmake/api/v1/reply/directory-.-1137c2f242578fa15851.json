@@ -36,19 +36,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 40,
+				"line" : 55,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 55,
+				"line" : 70,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 58,
+				"line" : 73,
 				"parent" : 0
 			},
 			{
@@ -250,7 +250,19 @@
 				"pick_and_place_fixed"
 			],
 			"targetId" : "pick_and_place_fixed::@6890427a1f51a3e7e1df",
-			"targetIndex" : 2,
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/bin_nodes",
+			"paths" : 
+			[
+				"VisionNode"
+			],
+			"targetId" : "VisionNode::@6890427a1f51a3e7e1df",
+			"targetIndex" : 1,
 			"type" : "target"
 		},
 		{
