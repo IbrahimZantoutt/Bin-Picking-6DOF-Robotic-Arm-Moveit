@@ -47,7 +47,27 @@ class VisionNode: public rclcpp::Node{
             cv::waitKey(1);
 
             // Process the image and depth data here
-            // For example, detect targets and publish their positions
+            cv::Mat hsv, mask;
+            cv::cvtColor(cv_image, hsv, cv::COLOR_BGR2HSV);
+            cv::inRange(hsv, cv::Scalar(40, 100, 40), cv::Scalar(80, 255, 255), mask);
+            cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, {3, 3});
+            cv::morphologyEx(mask, mask, cv::MORPH_OPEN, kernel);
+            cv::morphologyEx(mask, mask, cv::MORPH_CLOSE, kernel);
+
+            std::vector<std::vector<cv::Point>> contours;
+            cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+
+            int best = -1;
+            double best_area = 50.0;  // ignore noise blobs smaller than this
+            for (size_t i = 0; i < contours.size(); ++i) {
+                double a = cv::contourArea(contours[i]);
+                if (a > best_area) { best_area = a; best = static_cast<int>(i); }
+            }
+
+            cv::imshow("hsv", hsv);
+            cv::waitKey(1);
+            cv::imshow("mask", mask);
+            cv::waitKey(1);
         }
 
     private:
