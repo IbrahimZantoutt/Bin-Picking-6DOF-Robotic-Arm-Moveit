@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "bin_interfaces__py",
+		"source" : "/home/ibrahim/BinPicking/build/bin_interfaces/bin_interfaces__py"
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "package_name": "bin_interfaces",
+  "non_idl_tuples": [
+    "/home/ibrahim/BinPicking/src/bin_interfaces:srv/GetTargets.srv"
+  ]
+}

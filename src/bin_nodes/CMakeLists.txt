@@ -18,6 +18,9 @@ find_package(image_geometry REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(bin_interfaces REQUIRED)
 
 
 add_executable(MoveArm src/MoveArm.cpp)
@@ -50,7 +53,10 @@ ament_target_dependencies(VisionNode
   sensor_msgs
   OpenCV
   image_geometry
-  geometry_msgs)
+  geometry_msgs
+  tf2_ros
+  tf2_geometry_msgs
+  bin_interfaces)
 
 install(TARGETS MoveArm pick_and_place_fixed VisionNode
   DESTINATION lib/${PROJECT_NAME})

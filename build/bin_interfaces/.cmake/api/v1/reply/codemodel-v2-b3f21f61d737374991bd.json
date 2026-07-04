@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d633d92bb45798123b9a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "bin_interfaces__py",
+					"jsonFile" : "directory-bin_interfaces__py-da7b7532b4dd02f39b9f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ibrahim/BinPicking/build/bin_interfaces/bin_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "bin_interfaces__rs",
+					"jsonFile" : "directory-bin_interfaces__rs-f81f80a9f4569748a34c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ibrahim/BinPicking/build/bin_interfaces/bin_interfaces__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "bin_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_bin_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_bin_interfaces_egg-c1eb3118671e93f53553.json",
+					"name" : "ament_cmake_python_build_bin_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_bin_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_bin_interfaces-12fa1222acfe85a76f94.json",
+					"name" : "ament_cmake_python_copy_bin_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces-d615bf89e108a6f865ea.json",
+					"name" : "bin_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__cpp-c85bdb46ebb23081a77b.json",
+					"name" : "bin_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "bin_interfaces__py::@e02fde9c1053ca9233fe",
+					"jsonFile" : "target-bin_interfaces__py-85cdab872f6506a050e1.json",
+					"name" : "bin_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__rosidl_generator_c-d542d3ecbb6bf3c5d60b.json",
+					"name" : "bin_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__rosidl_generator_py-453249acfba3fad6785c.json",
+					"name" : "bin_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__rosidl_typesupport_c-fdd122cc07c2d8d020db.json",
+					"name" : "bin_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__rosidl_typesupport_c__pyext-52c0a5519787dd193e8a.json",
+					"name" : "bin_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__rosidl_typesupport_cpp-956e1b4592abca8e8a6e.json",
+					"name" : "bin_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__rosidl_typesupport_fastrtps_c-7f34dc69808339c61e9c.json",
+					"name" : "bin_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__rosidl_typesupport_fastrtps_c__pyext-509890454e5943e060ce.json",
+					"name" : "bin_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__rosidl_typesupport_fastrtps_cpp-71ff1b06bf1ab7d8ba92.json",
+					"name" : "bin_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__rosidl_typesupport_introspection_c-8fbdfd137074a0ca1481.json",
+					"name" : "bin_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__rosidl_typesupport_introspection_c__pyext-1bbeb1999eb5f6ab422f.json",
+					"name" : "bin_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces__rosidl_typesupport_introspection_cpp-3a0b07c68b11b59c67a2.json",
+					"name" : "bin_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "bin_interfaces__rs::@6270e9f762623c0e2f4a",
+					"jsonFile" : "target-bin_interfaces__rs-c01b478c55555505d062.json",
+					"name" : "bin_interfaces__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bin_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bin_interfaces_uninstall-c423b03850f7073bb292.json",
+					"name" : "bin_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-3275e958189167c5cae1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ibrahim/BinPicking/build/bin_interfaces",
+		"source" : "/home/ibrahim/BinPicking/src/bin_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

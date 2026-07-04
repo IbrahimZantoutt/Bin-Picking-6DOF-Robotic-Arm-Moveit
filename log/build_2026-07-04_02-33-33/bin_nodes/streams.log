@@ -1,0 +1,78 @@
+[0.119s] Invoking command in '/home/ibrahim/BinPicking/build/bin_nodes': AMENT_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16
+[0.167s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.358s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.546s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.552s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.565s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.587s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.608s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.670s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.675s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.712s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.796s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.817s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.060s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.128s] -- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.140s] -- Found rclcpp_lifecycle: 16.0.19 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.173s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[3.949s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[3.987s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.736s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[5.767s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[5.824s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[5.857s] -- Found linkattacher_msgs: 0.0.0 (/home/ibrahim/BinPicking/install/linkattacher_msgs/share/linkattacher_msgs/cmake)
+[5.865s] -- Found image_geometry: 3.2.1 (/opt/ros/humble/share/image_geometry/cmake)
+[5.877s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[5.890s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.970s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.970s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ibrahim/BinPicking/src/bin_nodes/include>
+[5.971s] -- Configured cppcheck exclude dirs and/or files: 
+[5.971s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.971s] -- Added test 'lint_cmake' to check CMake code style
+[5.972s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.974s] -- Added test 'uncrustify' to check C / C++ code style
+[5.974s] -- Configured uncrustify additional arguments: 
+[5.975s] -- Added test 'xmllint' to check XML markup files
+[5.978s] -- Configuring done
+[6.073s] -- Generating done
+[6.095s] -- Build files have been written to: /home/ibrahim/BinPicking/build/bin_nodes
+[6.160s] Consolidate compiler generated dependencies of target VisionNode
+[6.166s] Consolidate compiler generated dependencies of target MoveArm
+[6.166s] Consolidate compiler generated dependencies of target pick_and_place_fixed
+[6.181s] [ 16%] Building CXX object CMakeFiles/VisionNode.dir/src/VisionNode.cpp.o
+[6.189s] [ 50%] Built target pick_and_place_fixed
+[6.189s] [ 83%] Built target MoveArm
+[19.512s] [100%] Linking CXX executable VisionNode
+[21.174s] [100%] Built target VisionNode
+[21.188s] Invoked command in '/home/ibrahim/BinPicking/build/bin_nodes' returned '0': AMENT_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_nodes -- -j16 -l16
+[21.201s] Invoking command in '/home/ibrahim/BinPicking/build/bin_nodes': AMENT_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ibrahim/BinPicking/build/bin_nodes
+[21.212s] -- Install configuration: ""
+[21.213s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/MoveArm
+[21.215s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/pick_and_place_fixed
+[21.217s] -- Installing: /home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/VisionNode
+[21.228s] -- Set runtime path of "/home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/VisionNode" to ""
+[21.228s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/launch
+[21.229s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/launch/display.launch.py
+[21.229s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/urdf
+[21.230s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/urdf/camera.urdf
+[21.230s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/urdf/robot.urdf
+[21.230s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/rviz
+[21.231s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/rviz/model.rviz
+[21.231s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/worlds
+[21.231s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/worlds/world.sdf
+[21.231s] -- Installing: /home/ibrahim/BinPicking/install/bin_nodes/share/ament_index/resource_index/package_run_dependencies/bin_nodes
+[21.232s] -- Installing: /home/ibrahim/BinPicking/install/bin_nodes/share/ament_index/resource_index/parent_prefix_path/bin_nodes
+[21.233s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/ament_prefix_path.sh
+[21.233s] -- Installing: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/ament_prefix_path.dsv
+[21.234s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/path.sh
+[21.234s] -- Installing: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/path.dsv
+[21.235s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.bash
+[21.236s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.sh
+[21.236s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.zsh
+[21.236s] -- Installing: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.dsv
+[21.236s] -- Installing: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/package.dsv
+[21.237s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/ament_index/resource_index/packages/bin_nodes
+[21.237s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/cmake/bin_nodesConfig.cmake
+[21.237s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/cmake/bin_nodesConfig-version.cmake
+[21.237s] -- Installing: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/package.xml
+[21.239s] Invoked command in '/home/ibrahim/BinPicking/build/bin_nodes' returned '0': AMENT_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ibrahim/BinPicking/install/linkattacher_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ibrahim/BinPicking/build/bin_nodes

@@ -1,0 +1,4 @@
+source;share/bin_interfaces/local_setup.bash
+source;share/bin_interfaces/local_setup.dsv
+source;share/bin_interfaces/local_setup.sh
+source;share/bin_interfaces/local_setup.zsh

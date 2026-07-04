@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target VisionNode[0m
+[ 66%] Built target pick_and_place_fixed
+[ 66%] Built target MoveArm
+[ 83%] [32mBuilding CXX object CMakeFiles/VisionNode.dir/src/VisionNode.cpp.o[0m

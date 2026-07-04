@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target VisionNode[0m
+[ 66%] Built target pick_and_place_fixed
+[ 66%] Built target MoveArm
+[ 83%] [32mBuilding CXX object CMakeFiles/VisionNode.dir/src/VisionNode.cpp.o[0m
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/VisionNode.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/buffer.h: No such file or directory
+    8 | #include [01;31m[K<tf2_ros/buffer.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/VisionNode.dir/build.make:76: CMakeFiles/VisionNode.dir/src/VisionNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/VisionNode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

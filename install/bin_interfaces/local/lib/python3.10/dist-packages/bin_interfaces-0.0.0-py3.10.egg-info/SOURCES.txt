@@ -1,0 +1,8 @@
+setup.py
+bin_interfaces/__init__.py
+bin_interfaces.egg-info/PKG-INFO
+bin_interfaces.egg-info/SOURCES.txt
+bin_interfaces.egg-info/dependency_links.txt
+bin_interfaces.egg-info/top_level.txt
+bin_interfaces/srv/__init__.py
+bin_interfaces/srv/_get_targets.py
