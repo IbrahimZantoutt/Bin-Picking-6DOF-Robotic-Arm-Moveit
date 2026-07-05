@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🦾 Vision-Guided Bin Picking — 6-DOF Robotic Arm
+# Vision-Guided Bin Picking — 6-DOF Robotic Arm
 
 **Autonomous pick-and-place in ROS 2 & Gazebo, driven by a depth camera and MoveIt motion planning.**
 
@@ -16,7 +16,7 @@ A 6-DOF arm finds green cubes it has never been told the location of, computes e
 
 ---
 
-## 🎬 Demo
+## Demo
 
 <!-- Drop your files in a docs/ folder and keep these names, or edit the paths below. -->
 
@@ -46,7 +46,7 @@ A 6-DOF arm finds green cubes it has never been told the location of, computes e
 
 ---
 
-## ✨ Highlights
+## Highlights
 
 - **No hard-coded target positions** — the arm discovers where the cubes are purely from camera data at runtime.
 - **Closed perception → planning → action loop** — vision detects a cube, a ROS 2 service hands over its 3D pose, MoveIt plans around obstacles, the arm executes, repeat until none remain.
@@ -56,7 +56,7 @@ A 6-DOF arm finds green cubes it has never been told the location of, computes e
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ```
  Overhead RGB-D camera (Gazebo)
@@ -88,7 +88,7 @@ A 6-DOF arm finds green cubes it has never been told the location of, computes e
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Tools / Libraries |
 |---|---|
@@ -102,7 +102,7 @@ A 6-DOF arm finds green cubes it has never been told the location of, computes e
 
 ---
 
-## 📦 Repository Layout
+## Repository Layout
 
 ```
 src/
@@ -117,7 +117,7 @@ src/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Ubuntu 22.04 + **ROS 2 Humble**
