@@ -236,6 +236,19 @@ VisionNode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VisionNode.dir/build.make CMakeFiles/VisionNode.dir/build
 .PHONY : VisionNode/fast
 
+#=============================================================================
+# Target rules for targets named pick_and_place_smart
+
+# Build rule for target.
+pick_and_place_smart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_and_place_smart
+.PHONY : pick_and_place_smart
+
+# fast build rule for target.
+pick_and_place_smart/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_smart.dir/build.make CMakeFiles/pick_and_place_smart.dir/build
+.PHONY : pick_and_place_smart/fast
+
 src/MoveArm.o: src/MoveArm.cpp.o
 .PHONY : src/MoveArm.o
 
@@ -308,6 +321,30 @@ src/pick_and_place_fixed.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_fixed.dir/build.make CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.s
 .PHONY : src/pick_and_place_fixed.cpp.s
 
+src/pick_and_place_smart.o: src/pick_and_place_smart.cpp.o
+.PHONY : src/pick_and_place_smart.o
+
+# target to build an object file
+src/pick_and_place_smart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_smart.dir/build.make CMakeFiles/pick_and_place_smart.dir/src/pick_and_place_smart.cpp.o
+.PHONY : src/pick_and_place_smart.cpp.o
+
+src/pick_and_place_smart.i: src/pick_and_place_smart.cpp.i
+.PHONY : src/pick_and_place_smart.i
+
+# target to preprocess a source file
+src/pick_and_place_smart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_smart.dir/build.make CMakeFiles/pick_and_place_smart.dir/src/pick_and_place_smart.cpp.i
+.PHONY : src/pick_and_place_smart.cpp.i
+
+src/pick_and_place_smart.s: src/pick_and_place_smart.cpp.s
+.PHONY : src/pick_and_place_smart.s
+
+# target to generate assembly for a file
+src/pick_and_place_smart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_smart.dir/build.make CMakeFiles/pick_and_place_smart.dir/src/pick_and_place_smart.cpp.s
+.PHONY : src/pick_and_place_smart.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -326,6 +363,7 @@ help:
 	@echo "... MoveArm"
 	@echo "... VisionNode"
 	@echo "... pick_and_place_fixed"
+	@echo "... pick_and_place_smart"
 	@echo "... src/MoveArm.o"
 	@echo "... src/MoveArm.i"
 	@echo "... src/MoveArm.s"
@@ -335,6 +373,9 @@ help:
 	@echo "... src/pick_and_place_fixed.o"
 	@echo "... src/pick_and_place_fixed.i"
 	@echo "... src/pick_and_place_fixed.s"
+	@echo "... src/pick_and_place_smart.o"
+	@echo "... src/pick_and_place_smart.i"
+	@echo "... src/pick_and_place_smart.s"
 .PHONY : help
 
 

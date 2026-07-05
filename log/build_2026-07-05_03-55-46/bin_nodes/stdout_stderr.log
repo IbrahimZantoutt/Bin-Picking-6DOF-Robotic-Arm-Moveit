@@ -1,0 +1,15 @@
+[ 25%] Built target VisionNode
+[ 50%] [32mBuilding CXX object CMakeFiles/pick_and_place_smart.dir/src/pick_and_place_smart.cpp.o[0m
+[ 87%] Built target MoveArm
+[ 87%] Built target pick_and_place_fixed
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_smart.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_smart.cpp:207:13:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(main(int, char**)::<lambda(double, double, double)>) (geometry_msgs::msg::Point&)[m[K’
+  207 |         [01;31m[Kpick(target)[m[K;      // pick must take the point (see below)
+      |         [01;31m[K~~~~^~~~~~~~[m[K
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_smart.cpp:145:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmain(int, char**)::<lambda(double, double, double)>[m[K’
+  145 |     auto pick = [01;36m[K[[m[K&](double x, double y, double z){
+      |                 [01;36m[K^[m[K
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_smart.cpp:145:17:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/pick_and_place_smart.dir/build.make:76: CMakeFiles/pick_and_place_smart.dir/src/pick_and_place_smart.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/pick_and_place_smart.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

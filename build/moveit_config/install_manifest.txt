@@ -22,6 +22,7 @@
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/rsp.launch.py
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/moveit_rviz.launch.py
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/warehouse_db.launch.py
+/home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/pick_and_place_smart.launch.py
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/pick_and_place.launch.py
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/demo.launch.py
 /home/ibrahim/BinPicking/install/moveit_config/share/moveit_config/launch/setup_assistant.launch.py

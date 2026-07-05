@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target pick_and_place_smart[0m
+[ 25%] Built target VisionNode
+[ 62%] Built target pick_and_place_fixed
+[ 75%] Built target MoveArm
+[ 87%] [32mBuilding CXX object CMakeFiles/pick_and_place_smart.dir/src/pick_and_place_smart.cpp.o[0m
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_smart.cpp:[m[K In lambda function:
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_smart.cpp:160:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_cube[m[K’ was not declared in this scope
+  160 |             detach("robot_arm", "wrist_yaw_link", [01;31m[Kcurrent_cube[m[K, "link");
+      |                                                   [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pick_and_place_smart.dir/build.make:76: CMakeFiles/pick_and_place_smart.dir/src/pick_and_place_smart.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/pick_and_place_smart.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

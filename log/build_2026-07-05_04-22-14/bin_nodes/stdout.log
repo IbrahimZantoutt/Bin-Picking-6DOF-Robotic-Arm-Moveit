@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target pick_and_place_smart[0m
+[ 25%] Built target VisionNode
+[ 62%] Built target pick_and_place_fixed
+[ 75%] Built target MoveArm
+[ 87%] [32mBuilding CXX object CMakeFiles/pick_and_place_smart.dir/src/pick_and_place_smart.cpp.o[0m

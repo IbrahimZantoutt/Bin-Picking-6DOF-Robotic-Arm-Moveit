@@ -1,0 +1,10 @@
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_smart.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_smart.cpp:28:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<rclcpp::Client<bin_interfaces::srv::GetTargets> >[m[K’ has no member named ‘[01m[Kwait_for_service[m[K’
+   28 |     client.[01;31m[Kwait_for_service[m[K(5s);
+      |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_smart.cpp:29:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<rclcpp::Client<bin_interfaces::srv::GetTargets> >[m[K’ has no member named ‘[01m[Kasync_send_request[m[K’
+   29 |     client.[01;31m[Kasync_send_request[m[K(request, [logger](rclcpp::Client<bin_interfaces::srv::GetTargets>::SharedFuture future){
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pick_and_place_smart.dir/build.make:76: CMakeFiles/pick_and_place_smart.dir/src/pick_and_place_smart.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/pick_and_place_smart.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

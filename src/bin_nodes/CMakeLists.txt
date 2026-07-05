@@ -58,7 +58,20 @@ ament_target_dependencies(VisionNode
   tf2_geometry_msgs
   bin_interfaces)
 
-install(TARGETS MoveArm pick_and_place_fixed VisionNode
+add_executable(pick_and_place_smart src/pick_and_place_smart.cpp)
+target_include_directories(pick_and_place_smart PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+target_compile_features(pick_and_place_smart PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+ament_target_dependencies(pick_and_place_smart
+  rclcpp
+  moveit_ros_planning_interface
+  geometry_msgs
+  tf2
+  linkattacher_msgs
+  bin_interfaces)
+
+install(TARGETS MoveArm pick_and_place_fixed VisionNode pick_and_place_smart
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

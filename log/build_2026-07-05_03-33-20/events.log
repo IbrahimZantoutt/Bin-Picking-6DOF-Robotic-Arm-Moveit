@@ -1,0 +1,222 @@
+[0.000000] (-) TimerEvent: {}
+[0.000334] (-) JobUnselected: {'identifier': 'bin_interfaces'}
+[0.000392] (-) JobUnselected: {'identifier': 'linkattacher_msgs'}
+[0.000426] (-) JobUnselected: {'identifier': 'moveit_config'}
+[0.000441] (-) JobUnselected: {'identifier': 'ros2_linkattacher'}
+[0.000478] (bin_nodes) JobQueued: {'identifier': 'bin_nodes', 'dependencies': OrderedDict([('bin_interfaces', '/home/ibrahim/BinPicking/install/bin_interfaces'), ('linkattacher_msgs', '/home/ibrahim/BinPicking/install/linkattacher_msgs')])}
+[0.001043] (bin_nodes) JobStarted: {'identifier': 'bin_nodes'}
+[0.099454] (-) TimerEvent: {}
+[0.199704] (-) TimerEvent: {}
+[0.257491] (bin_nodes) JobProgress: {'identifier': 'bin_nodes', 'progress': 'cmake'}
+[0.259269] (bin_nodes) JobProgress: {'identifier': 'bin_nodes', 'progress': 'build'}
+[0.261455] (bin_nodes) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ibrahim/BinPicking/build/bin_nodes', '--', '-j16', '-l16'], 'cwd': '/home/ibrahim/BinPicking/build/bin_nodes', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('AI_AGENT', 'claude-code_2-1-200_agent'), ('USER', 'ibrahim'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/ibrahim/.vscode-server/bin/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('GIT_EDITOR', 'true'), ('VSCODE_WSL_EXT_LOCATION', '/mnt/c/Users/zanto/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('CLAUDE_AGENT_SDK_VERSION', '0.3.200'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:/home/ibrahim/BinPicking/install/bin_interfaces/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-19c3d8fe-2f3c-4d83-a88b-c2ddfe0412cf.sock'), ('ROS_PYTHON_VERSION', '3'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('COPILOT_OTEL_FILE_EXPORTER_PATH', '/dev/null'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/429_interop'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/home/ibrahim/.vscode-server/bin/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Windows/system32/config/systemprofile/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('CLAUDE_EFFORT', 'xhigh'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/BinPicking/install/bin_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('MXC_BIN_DIR', '/home/ibrahim/.vscode-server/bin/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/node_modules/@microsoft/mxc-sdk/bin'), ('ELECTRON_RUN_AS_NODE', '1'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('CLAUDE_CODE_SESSION_ID', '27bbe8af-c001-4d00-942c-a05f01044269'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('PWD', '/home/ibrahim/BinPicking/build/bin_nodes'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ibrahim/.vscode-server/extensions/anthropic.claude-code-2.1.200-linux-x64/resources/native-binary/claude'), ('PYTHONPATH', '/home/ibrahim/BinPicking/install/linkattacher_msgs/local/lib/python3.10/dist-packages:/home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CLAUDE_CODE_ENABLE_TASKS', '0'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('COPILOT_CLI_ENABLED_FEATURE_FLAGS', 'SHELL_SPAWN_BACKEND'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/BinPicking/install/bin_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.299813] (-) TimerEvent: {}
+[0.375258] (bin_nodes) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target pick_and_place_smart\n'}
+[0.381735] (bin_nodes) StdoutLine: {'line': b'[ 62%] Built target VisionNode\n'}
+[0.381971] (bin_nodes) StdoutLine: {'line': b'[ 62%] Built target MoveArm\n'}
+[0.382122] (bin_nodes) StdoutLine: {'line': b'[ 75%] Built target pick_and_place_fixed\n'}
+[0.396882] (bin_nodes) StdoutLine: {'line': b'[ 87%] Building CXX object CMakeFiles/pick_and_place_smart.dir/src/pick_and_place_smart.cpp.o\n'}
+[0.400029] (-) TimerEvent: {}
+[0.500387] (-) TimerEvent: {}
+[0.600684] (-) TimerEvent: {}
+[0.700917] (-) TimerEvent: {}
+[0.801161] (-) TimerEvent: {}
+[0.901481] (-) TimerEvent: {}
+[1.001745] (-) TimerEvent: {}
+[1.102138] (-) TimerEvent: {}
+[1.202498] (-) TimerEvent: {}
+[1.302761] (-) TimerEvent: {}
+[1.403090] (-) TimerEvent: {}
+[1.503429] (-) TimerEvent: {}
+[1.603845] (-) TimerEvent: {}
+[1.704198] (-) TimerEvent: {}
+[1.804546] (-) TimerEvent: {}
+[1.904897] (-) TimerEvent: {}
+[2.005219] (-) TimerEvent: {}
+[2.105562] (-) TimerEvent: {}
+[2.205854] (-) TimerEvent: {}
+[2.306099] (-) TimerEvent: {}
+[2.406353] (-) TimerEvent: {}
+[2.506685] (-) TimerEvent: {}
+[2.607056] (-) TimerEvent: {}
+[2.707391] (-) TimerEvent: {}
+[2.807698] (-) TimerEvent: {}
+[2.907969] (-) TimerEvent: {}
+[3.008255] (-) TimerEvent: {}
+[3.108610] (-) TimerEvent: {}
+[3.208867] (-) TimerEvent: {}
+[3.310154] (-) TimerEvent: {}
+[3.410567] (-) TimerEvent: {}
+[3.510950] (-) TimerEvent: {}
+[3.611245] (-) TimerEvent: {}
+[3.711563] (-) TimerEvent: {}
+[3.811936] (-) TimerEvent: {}
+[3.912307] (-) TimerEvent: {}
+[4.012573] (-) TimerEvent: {}
+[4.112949] (-) TimerEvent: {}
+[4.213238] (-) TimerEvent: {}
+[4.313543] (-) TimerEvent: {}
+[4.413808] (-) TimerEvent: {}
+[4.514203] (-) TimerEvent: {}
+[4.614568] (-) TimerEvent: {}
+[4.714826] (-) TimerEvent: {}
+[4.815177] (-) TimerEvent: {}
+[4.915546] (-) TimerEvent: {}
+[5.015865] (-) TimerEvent: {}
+[5.116191] (-) TimerEvent: {}
+[5.216540] (-) TimerEvent: {}
+[5.316839] (-) TimerEvent: {}
+[5.417148] (-) TimerEvent: {}
+[5.517411] (-) TimerEvent: {}
+[5.617679] (-) TimerEvent: {}
+[5.717974] (-) TimerEvent: {}
+[5.818329] (-) TimerEvent: {}
+[5.918643] (-) TimerEvent: {}
+[6.019075] (-) TimerEvent: {}
+[6.119521] (-) TimerEvent: {}
+[6.219846] (-) TimerEvent: {}
+[6.320281] (-) TimerEvent: {}
+[6.420746] (-) TimerEvent: {}
+[6.521018] (-) TimerEvent: {}
+[6.621281] (-) TimerEvent: {}
+[6.721530] (-) TimerEvent: {}
+[6.821762] (-) TimerEvent: {}
+[6.922094] (-) TimerEvent: {}
+[7.022376] (-) TimerEvent: {}
+[7.122689] (-) TimerEvent: {}
+[7.223066] (-) TimerEvent: {}
+[7.323439] (-) TimerEvent: {}
+[7.423812] (-) TimerEvent: {}
+[7.524278] (-) TimerEvent: {}
+[7.624513] (-) TimerEvent: {}
+[7.724717] (-) TimerEvent: {}
+[7.825017] (-) TimerEvent: {}
+[7.925343] (-) TimerEvent: {}
+[8.025722] (-) TimerEvent: {}
+[8.126130] (-) TimerEvent: {}
+[8.226422] (-) TimerEvent: {}
+[8.326742] (-) TimerEvent: {}
+[8.426995] (-) TimerEvent: {}
+[8.527257] (-) TimerEvent: {}
+[8.627522] (-) TimerEvent: {}
+[8.727899] (-) TimerEvent: {}
+[8.828207] (-) TimerEvent: {}
+[8.928654] (-) TimerEvent: {}
+[9.029092] (-) TimerEvent: {}
+[9.129328] (-) TimerEvent: {}
+[9.229546] (-) TimerEvent: {}
+[9.329851] (-) TimerEvent: {}
+[9.430120] (-) TimerEvent: {}
+[9.530455] (-) TimerEvent: {}
+[9.630848] (-) TimerEvent: {}
+[9.731230] (-) TimerEvent: {}
+[9.831588] (-) TimerEvent: {}
+[9.931885] (-) TimerEvent: {}
+[10.032277] (-) TimerEvent: {}
+[10.132604] (-) TimerEvent: {}
+[10.232923] (-) TimerEvent: {}
+[10.333205] (-) TimerEvent: {}
+[10.433563] (-) TimerEvent: {}
+[10.533894] (-) TimerEvent: {}
+[10.634125] (-) TimerEvent: {}
+[10.734381] (-) TimerEvent: {}
+[10.834724] (-) TimerEvent: {}
+[10.935097] (-) TimerEvent: {}
+[11.035420] (-) TimerEvent: {}
+[11.135727] (-) TimerEvent: {}
+[11.236088] (-) TimerEvent: {}
+[11.336389] (-) TimerEvent: {}
+[11.436688] (-) TimerEvent: {}
+[11.536931] (-) TimerEvent: {}
+[11.637200] (-) TimerEvent: {}
+[11.737427] (-) TimerEvent: {}
+[11.837649] (-) TimerEvent: {}
+[11.937885] (-) TimerEvent: {}
+[12.038142] (-) TimerEvent: {}
+[12.138480] (-) TimerEvent: {}
+[12.238845] (-) TimerEvent: {}
+[12.339202] (-) TimerEvent: {}
+[12.439521] (-) TimerEvent: {}
+[12.539755] (-) TimerEvent: {}
+[12.640140] (-) TimerEvent: {}
+[12.740491] (-) TimerEvent: {}
+[12.840776] (-) TimerEvent: {}
+[12.941059] (-) TimerEvent: {}
+[13.041470] (-) TimerEvent: {}
+[13.141866] (-) TimerEvent: {}
+[13.242262] (-) TimerEvent: {}
+[13.342547] (-) TimerEvent: {}
+[13.442955] (-) TimerEvent: {}
+[13.543357] (-) TimerEvent: {}
+[13.643771] (-) TimerEvent: {}
+[13.744122] (-) TimerEvent: {}
+[13.844417] (-) TimerEvent: {}
+[13.944677] (-) TimerEvent: {}
+[14.044877] (-) TimerEvent: {}
+[14.145310] (-) TimerEvent: {}
+[14.245672] (-) TimerEvent: {}
+[14.346020] (-) TimerEvent: {}
+[14.446315] (-) TimerEvent: {}
+[14.546642] (-) TimerEvent: {}
+[14.647078] (-) TimerEvent: {}
+[14.747440] (-) TimerEvent: {}
+[14.847836] (-) TimerEvent: {}
+[14.948230] (-) TimerEvent: {}
+[15.048544] (-) TimerEvent: {}
+[15.148807] (-) TimerEvent: {}
+[15.249220] (-) TimerEvent: {}
+[15.349510] (-) TimerEvent: {}
+[15.449844] (-) TimerEvent: {}
+[15.550255] (-) TimerEvent: {}
+[15.650655] (-) TimerEvent: {}
+[15.751029] (-) TimerEvent: {}
+[15.851293] (-) TimerEvent: {}
+[15.951846] (-) TimerEvent: {}
+[16.052289] (-) TimerEvent: {}
+[16.152519] (-) TimerEvent: {}
+[16.228051] (bin_nodes) StdoutLine: {'line': b'[100%] Linking CXX executable pick_and_place_smart\n'}
+[16.252618] (-) TimerEvent: {}
+[16.352864] (-) TimerEvent: {}
+[16.453177] (-) TimerEvent: {}
+[16.553444] (-) TimerEvent: {}
+[16.653732] (-) TimerEvent: {}
+[16.754105] (-) TimerEvent: {}
+[16.854391] (-) TimerEvent: {}
+[16.929876] (bin_nodes) StdoutLine: {'line': b'[100%] Built target pick_and_place_smart\n'}
+[16.951954] (bin_nodes) CommandEnded: {'returncode': 0}
+[16.953080] (bin_nodes) JobProgress: {'identifier': 'bin_nodes', 'progress': 'install'}
+[16.954528] (-) TimerEvent: {}
+[16.967250] (bin_nodes) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ibrahim/BinPicking/build/bin_nodes'], 'cwd': '/home/ibrahim/BinPicking/build/bin_nodes', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('AI_AGENT', 'claude-code_2-1-200_agent'), ('USER', 'ibrahim'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/ibrahim/.vscode-server/bin/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('GIT_EDITOR', 'true'), ('VSCODE_WSL_EXT_LOCATION', '/mnt/c/Users/zanto/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('CLAUDE_AGENT_SDK_VERSION', '0.3.200'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/ibrahim/BinPicking/install/linkattacher_msgs/lib:/home/ibrahim/BinPicking/install/bin_interfaces/lib:/home/ibrahim/RobotArmExpanded/install/action_interfaces/lib:/home/ibrahim/RobotArm/install/action_interfaces/lib:/home/ibrahim/RobotNav/install/action_interfaces/lib:/home/ibrahim/ros2_ws/install/action_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/ibrahim'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-19c3d8fe-2f3c-4d83-a88b-c2ddfe0412cf.sock'), ('ROS_PYTHON_VERSION', '3'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('COPILOT_OTEL_FILE_EXPORTER_PATH', '/dev/null'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/ibrahim/MoveItArm/install:/home/ibrahim/RobotArmExpanded/install:/home/ibrahim/RobotArm/install:/home/ibrahim/TF2Sample/install:/home/ibrahim/RobotNav/install:/home/ibrahim/RobotMonitor/install:/home/ibrahim/ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ibrahim'), ('NAME', 'Ibrahim-laptop'), ('WSL_INTEROP', '/run/WSL/429_interop'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/home/ibrahim/.vscode-server/bin/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PostgreSQL/18/bin:/mnt/c/Windows/system32/config/systemprofile/.local/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/zanto/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/zanto/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zanto/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zanto/AppData/Local/Programs/Ollama:/mnt/c/Users/zanto/AppData/Roaming/npm:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('CLAUDE_EFFORT', 'xhigh'), ('DISPLAY', ':0'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/BinPicking/install/bin_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('MXC_BIN_DIR', '/home/ibrahim/.vscode-server/bin/4fe60c8b1cdac1c4c174f2fb180d0d758272d713/node_modules/@microsoft/mxc-sdk/bin'), ('ELECTRON_RUN_AS_NODE', '1'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('CLAUDE_CODE_SESSION_ID', '27bbe8af-c001-4d00-942c-a05f01044269'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('PWD', '/home/ibrahim/BinPicking/build/bin_nodes'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/ibrahim/.vscode-server/extensions/anthropic.claude-code-2.1.200-linux-x64/resources/native-binary/claude'), ('PYTHONPATH', '/home/ibrahim/BinPicking/install/linkattacher_msgs/local/lib/python3.10/dist-packages:/home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArmExpanded/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotArm/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/RobotNav/install/action_interfaces/local/lib/python3.10/dist-packages:/home/ibrahim/ros2_ws/install/action_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CLAUDE_CODE_ENABLE_TASKS', '0'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('COPILOT_CLI_ENABLED_FEATURE_FLAGS', 'SHELL_SPAWN_BACKEND'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ibrahim/BinPicking/install/linkattacher_msgs:/home/ibrahim/BinPicking/install/bin_interfaces:/home/ibrahim/RobotArmExpanded/install/main_arm_package:/home/ibrahim/RobotArmExpanded/install/action_interfaces:/home/ibrahim/MoveItArm/install/moveit_config:/home/ibrahim/MoveItArm/install/moveit_arm_package:/home/ibrahim/TF2Sample/install/tf2sim:/home/ibrahim/RobotNav/install/main_robot_nodes:/home/ibrahim/RobotNav/install/action_interfaces:/home/ibrahim/RobotMonitor/install/Robot3Node_Package:/home/ibrahim/ros2_ws/install/my_first_package:/home/ibrahim/ros2_ws/install/action_interfaces:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[16.977517] (bin_nodes) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.977855] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/MoveArm\n'}
+[16.978153] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/pick_and_place_fixed\n'}
+[16.978444] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/VisionNode\n'}
+[16.978870] (bin_nodes) StdoutLine: {'line': b'-- Installing: /home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/pick_and_place_smart\n'}
+[16.985164] (bin_nodes) StdoutLine: {'line': b'-- Set runtime path of "/home/ibrahim/BinPicking/install/bin_nodes/lib/bin_nodes/pick_and_place_smart" to ""\n'}
+[16.985788] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/launch\n'}
+[16.986239] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/launch/display.launch.py\n'}
+[16.986552] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/urdf\n'}
+[16.986600] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/urdf/camera.urdf\n'}
+[16.986637] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/urdf/robot.urdf\n'}
+[16.986671] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/rviz\n'}
+[16.986700] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/rviz/model.rviz\n'}
+[16.986730] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/worlds\n'}
+[16.986759] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/worlds/world.sdf\n'}
+[16.986787] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/ament_index/resource_index/package_run_dependencies/bin_nodes\n'}
+[16.986818] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/ament_index/resource_index/parent_prefix_path/bin_nodes\n'}
+[16.986874] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/ament_prefix_path.sh\n'}
+[16.986927] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/ament_prefix_path.dsv\n'}
+[16.987035] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/path.sh\n'}
+[16.987175] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/environment/path.dsv\n'}
+[16.987258] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.bash\n'}
+[16.987301] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.sh\n'}
+[16.987342] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.zsh\n'}
+[16.987381] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/local_setup.dsv\n'}
+[16.987427] (bin_nodes) StdoutLine: {'line': b'-- Installing: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/package.dsv\n'}
+[16.987469] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/ament_index/resource_index/packages/bin_nodes\n'}
+[16.987510] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/cmake/bin_nodesConfig.cmake\n'}
+[16.987539] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/cmake/bin_nodesConfig-version.cmake\n'}
+[16.987569] (bin_nodes) StdoutLine: {'line': b'-- Up-to-date: /home/ibrahim/BinPicking/install/bin_nodes/share/bin_nodes/package.xml\n'}
+[16.988464] (bin_nodes) CommandEnded: {'returncode': 0}
+[17.009517] (bin_nodes) JobEnded: {'identifier': 'bin_nodes', 'rc': 0}
+[17.011175] (-) EventReactorShutdown: {}

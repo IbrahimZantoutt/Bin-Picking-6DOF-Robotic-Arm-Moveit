@@ -1,0 +1,161 @@
+[0.022s] Invoking command in '/home/ibrahim/BinPicking/build/bin_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_interfaces -- -j16 -l16
+[0.083s] [ 12%] Built target bin_interfaces__cpp
+[0.083s] [ 12%] Built target bin_interfaces__rs
+[0.084s] [ 15%] Built target bin_interfaces__rosidl_generator_c
+[0.098s] [ 15%] Built target ament_cmake_python_copy_bin_interfaces
+[0.119s] [ 25%] Built target bin_interfaces__rosidl_typesupport_introspection_c
+[0.120s] [ 43%] Built target bin_interfaces__rosidl_typesupport_c
+[0.121s] [ 40%] Built target bin_interfaces__rosidl_typesupport_fastrtps_c
+[0.124s] [ 59%] Built target bin_interfaces__rosidl_typesupport_introspection_cpp
+[0.124s] [ 62%] Built target bin_interfaces__rosidl_typesupport_cpp
+[0.135s] [ 71%] Built target bin_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.163s] [ 71%] Built target bin_interfaces
+[0.190s] [ 75%] Built target bin_interfaces__py
+[0.220s] [ 81%] Built target bin_interfaces__rosidl_generator_py
+[0.249s] [ 93%] Built target bin_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.249s] [ 93%] Built target bin_interfaces__rosidl_typesupport_c__pyext
+[0.249s] [100%] Built target bin_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.332s] running egg_info
+[0.333s] writing bin_interfaces.egg-info/PKG-INFO
+[0.333s] writing dependency_links to bin_interfaces.egg-info/dependency_links.txt
+[0.333s] writing top-level names to bin_interfaces.egg-info/top_level.txt
+[0.336s] reading manifest file 'bin_interfaces.egg-info/SOURCES.txt'
+[0.336s] writing manifest file 'bin_interfaces.egg-info/SOURCES.txt'
+[0.371s] [100%] Built target ament_cmake_python_build_bin_interfaces_egg
+[0.384s] Invoked command in '/home/ibrahim/BinPicking/build/bin_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/ibrahim/BinPicking/build/bin_interfaces -- -j16 -l16
+[0.386s] Invoking command in '/home/ibrahim/BinPicking/build/bin_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/BinPicking/build/bin_interfaces
+[0.400s] -- Install configuration: ""
+[0.400s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/ament_index/resource_index/rosidl_interfaces/bin_interfaces
+[0.401s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces
+[0.401s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv
+[0.401s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/get_targets.h
+[0.401s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail
+[0.401s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__type_support.h
+[0.401s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__functions.c
+[0.401s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__functions.h
+[0.401s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__struct.h
+[0.401s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/msg
+[0.401s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.401s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/environment/library_path.sh
+[0.402s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/environment/library_path.dsv
+[0.402s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/lib/libbin_interfaces__rosidl_generator_c.so
+[0.402s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces
+[0.402s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv
+[0.402s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail
+[0.403s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__rosidl_typesupport_fastrtps_c.h
+[0.403s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/msg
+[0.403s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.403s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/lib/libbin_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.403s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/get_targets.hpp
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__struct.hpp
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__builder.hpp
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__traits.hpp
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__type_support.hpp
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/msg
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__rosidl_typesupport_fastrtps_cpp.hpp
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/dds_fastrtps
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/msg
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/lib/libbin_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces
+[0.404s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__type_support.c
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__rosidl_typesupport_introspection_c.h
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/msg
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/lib/libbin_interfaces__rosidl_typesupport_introspection_c.so
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/lib/libbin_interfaces__rosidl_typesupport_c.so
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__type_support.cpp
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/include/bin_interfaces/bin_interfaces/srv/detail/get_targets__rosidl_typesupport_introspection_cpp.hpp
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/lib/libbin_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/lib/libbin_interfaces__rosidl_typesupport_cpp.so
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/environment/pythonpath.sh
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/environment/pythonpath.dsv
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces-0.0.0-py3.10.egg-info
+[0.405s] -- Installing: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[0.405s] -- Installing: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[0.405s] -- Installing: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.405s] -- Installing: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/_bin_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/bin_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/bin_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/srv
+[0.405s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/srv/_get_targets_s.c
+[0.406s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/srv/_get_targets.py
+[0.406s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/srv/__init__.py
+[0.406s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/bin_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.406s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/_bin_interfaces_s.ep.rosidl_typesupport_c.c
+[0.406s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/libbin_interfaces__rosidl_generator_py.so
+[0.406s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/_bin_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.406s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/__init__.py
+[0.431s] Listing '/home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces'...
+[0.431s] Listing '/home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/srv'...
+[0.439s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/bin_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.439s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/bin_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.441s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/local/lib/python3.10/dist-packages/bin_interfaces/bin_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.442s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/lib/libbin_interfaces__rosidl_generator_py.so
+[0.444s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/ament_index/resource_index/rust_packages/bin_interfaces
+[0.446s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/rust
+[0.446s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/rust/src
+[0.446s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/rust/src/lib.rs
+[0.447s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/rust/src/srv
+[0.447s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/rust/src/srv/rmw.rs
+[0.448s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/rust/src/srv.rs
+[0.448s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/rust/build.rs
+[0.449s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/rust/Cargo.toml
+[0.449s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/srv/GetTargets.idl
+[0.449s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/srv/GetTargets.srv
+[0.450s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/srv/GetTargets_Request.msg
+[0.450s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/srv/GetTargets_Response.msg
+[0.450s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/ament_index/resource_index/package_run_dependencies/bin_interfaces
+[0.451s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/ament_index/resource_index/parent_prefix_path/bin_interfaces
+[0.451s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/environment/ament_prefix_path.sh
+[0.451s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/environment/ament_prefix_path.dsv
+[0.453s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/environment/path.sh
+[0.453s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/environment/path.dsv
+[0.454s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/local_setup.bash
+[0.454s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/local_setup.sh
+[0.455s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/local_setup.zsh
+[0.455s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/local_setup.dsv
+[0.455s] -- Installing: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/package.dsv
+[0.455s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/ament_index/resource_index/packages/bin_interfaces
+[0.456s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/export_bin_interfaces__rosidl_generator_cExport.cmake
+[0.456s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/export_bin_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.456s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/export_bin_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.456s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/export_bin_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.456s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/export_bin_interfaces__rosidl_generator_cppExport.cmake
+[0.457s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/export_bin_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.457s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/export_bin_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.457s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/bin_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.457s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/bin_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.457s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/bin_interfaces__rosidl_typesupport_cExport.cmake
+[0.458s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/bin_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.458s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/bin_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.458s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/bin_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.458s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/bin_interfaces__rosidl_typesupport_cppExport.cmake
+[0.458s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/bin_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.459s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/export_bin_interfaces__rosidl_generator_pyExport.cmake
+[0.459s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/export_bin_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.460s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.460s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.461s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.461s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.461s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.461s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.462s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.462s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/bin_interfacesConfig.cmake
+[0.463s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/cmake/bin_interfacesConfig-version.cmake
+[0.463s] -- Up-to-date: /home/ibrahim/BinPicking/install/bin_interfaces/share/bin_interfaces/package.xml
+[0.487s] Invoked command in '/home/ibrahim/BinPicking/build/bin_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ibrahim/RobotArm/install/main_arm_package:/home/ibrahim/RobotArm/install/action_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/ibrahim/BinPicking/build/bin_interfaces

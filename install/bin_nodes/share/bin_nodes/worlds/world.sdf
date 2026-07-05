@@ -137,7 +137,7 @@
     </model>
 
     <!-- Green cube to pick (dynamic, resting on the pick table top at z = 0.2) -->
-    <model name="green_cube">
+    <model name="green_cube_3">
       <pose>0.4 0.35 0.22 0 0 0</pose>
       <link name="link">
         <inertial>
@@ -162,6 +162,60 @@
         </visual>
       </link>
     </model>
+
+    <model name="green_cube_1">
+      <pose>0.3 0.55 0.22 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>0.05</mass>
+          <inertia>
+            <ixx>0.0000133</ixx><ixy>0</ixy><ixz>0</ixz>
+            <iyy>0.0000133</iyy><iyz>0</iyz><izz>0.0000133</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry><box><size>0.02 0.02 0.02</size></box></geometry>
+          <surface>
+            <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.02 0.02 0.02</size></box></geometry>
+          <material>
+            <ambient>0.1 0.6 0.1 1</ambient>
+            <diffuse>0.1 0.8 0.1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+    <model name="green_cube_2">
+      <pose>0.5 0.15 0.22 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>0.05</mass>
+          <inertia>
+            <ixx>0.0000133</ixx><ixy>0</ixy><ixz>0</ixz>
+            <iyy>0.0000133</iyy><iyz>0</iyz><izz>0.0000133</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry><box><size>0.02 0.02 0.02</size></box></geometry>
+          <surface>
+            <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.02 0.02 0.02</size></box></geometry>
+          <material>
+            <ambient>0.1 0.6 0.1 1</ambient>
+            <diffuse>0.1 0.8 0.1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
 
     <plugin name="gazebo_link_attacher" filename="libgazebo_link_attacher.so"/>
 

@@ -1400,4 +1400,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MoveArm.dir/DependInfo.cmake"
   "CMakeFiles/pick_and_place_fixed.dir/DependInfo.cmake"
   "CMakeFiles/VisionNode.dir/DependInfo.cmake"
+  "CMakeFiles/pick_and_place_smart.dir/DependInfo.cmake"
   )
