@@ -32,6 +32,8 @@ A 6-DOF arm finds green cubes it has never been told the location of, computes e
 ### Robot model in RViz
 
 <!-- Paste your RViz screenshot's <img ... /> tag here (drag-drop the file into GitHub's editor to get one). -->
+<img width="100%" alt="rviz model arm" src="https://github.com/user-attachments/assets/085c6869-8e3f-430a-a7f2-79bbb3b9642a" />
+
 
 </td>
 </tr>
