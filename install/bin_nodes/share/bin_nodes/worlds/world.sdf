@@ -118,6 +118,23 @@
       </link>
     </model>
 
+    <model name="tables_wall">
+      <static>true</static>
+      <pose>0.4 0 0.1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.4 0.05 1</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.4 0.05 1</size></box></geometry>
+          <material>
+            <ambient>0.4 0.25 0.1 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
     <!-- Pick table, to the robot's left (top surface at z = 0.2) -->
     <model name="pick_table">
       <static>true</static>
