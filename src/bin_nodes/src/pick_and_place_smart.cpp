@@ -166,7 +166,7 @@ int main(int argc, char **argv){
     auto addCollisionObjects = [&](){
         moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
         std::vector<moveit_msgs::msg::CollisionObject> collision_objects;
-        collision_objects.resize(3);
+        collision_objects.resize(4);
 
         collision_objects[0].id = "table1";
         collision_objects[0].header.frame_id = "world";
@@ -190,7 +190,7 @@ int main(int argc, char **argv){
         collision_objects[1].primitive_poses[0].position.z = 0.1;
         collision_objects[1].operation = moveit_msgs::msg::CollisionObject::ADD;
 
-         collision_objects[2].id = "bin";
+        collision_objects[2].id = "bin";
         collision_objects[2].header.frame_id = "world";
         collision_objects[2].primitives.resize(1);
         collision_objects[2].primitives[0].type = shape_msgs::msg::SolidPrimitive::BOX;
@@ -200,6 +200,18 @@ int main(int argc, char **argv){
         collision_objects[2].primitive_poses[0].position.y = -0.35;
         collision_objects[2].primitive_poses[0].position.z = 0.2;
         collision_objects[2].operation = moveit_msgs::msg::CollisionObject::ADD;
+
+         collision_objects[3].id = "tables_wall";
+        collision_objects[3].header.frame_id = "world";
+        collision_objects[3].primitives.resize(1);
+        collision_objects[3].primitives[0].type = shape_msgs::msg::SolidPrimitive::BOX;
+        collision_objects[3].primitives[0].dimensions = {0.4, 0.05, 1};
+        collision_objects[3].primitive_poses.resize(1);
+        collision_objects[3].primitive_poses[0].position.x = 0.4;
+        collision_objects[3].primitive_poses[0].position.y = 0;
+        collision_objects[3].primitive_poses[0].position.z = 0.1;
+        collision_objects[3].operation = moveit_msgs::msg::CollisionObject::ADD;
+
 
 
         planning_scene_interface.applyCollisionObjects(collision_objects);
