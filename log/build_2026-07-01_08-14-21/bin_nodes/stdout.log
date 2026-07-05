@@ -1,3 +1,0 @@
-Consolidate compiler generated dependencies of target pick_and_place_fixed
-[ 50%] Built target MoveArm
-[ 75%] Building CXX object CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o

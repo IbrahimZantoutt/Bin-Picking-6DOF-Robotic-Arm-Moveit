@@ -1,4 +1,0 @@
-[ 25%] Built target VisionNode
-[ 50%] [32mBuilding CXX object CMakeFiles/pick_and_place_smart.dir/src/pick_and_place_smart.cpp.o[0m
-[ 87%] Built target MoveArm
-[ 87%] Built target pick_and_place_fixed

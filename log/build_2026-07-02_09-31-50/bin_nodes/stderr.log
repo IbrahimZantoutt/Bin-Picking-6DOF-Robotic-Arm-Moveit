@@ -1,7 +1,0 @@
-[01m[K/home/ibrahim/BinPicking/src/bin_nodes/src/pick_and_place_fixed.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kmoveit/planning_scene_interface/planning_scene_interface.hpp: No such file or directory
-    7 | #include [01;31m[K<moveit/planning_scene_interface/planning_scene_interface.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/pick_and_place_fixed.dir/build.make:76: CMakeFiles/pick_and_place_fixed.dir/src/pick_and_place_fixed.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pick_and_place_fixed.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
