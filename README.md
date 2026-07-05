@@ -18,15 +18,15 @@ A 6-DOF arm finds green cubes it has never been told the location of, computes e
 
 ## Demo
 
-<!-- Drop your files in a docs/ folder and keep these names, or edit the paths below. -->
-
 <div align="center">
 
 ### Full pick-and-place cycle
-![Arm picking cubes and placing them in the bin](docs/demo.gif)
+
+<img width="640" alt="Arm picking cubes and placing them in the bin" src="https://github.com/user-attachments/assets/bf3cef15-7345-4798-b5e9-ff506b7af56c" />
 
 ### Vision node — detected cube, HSV, and green mask
-![VisionNode output: raw camera image with detected cube, HSV view, and green mask](docs/vision_output.png)
+
+<img width="640" alt="VisionNode output: raw camera image with detected cube, HSV view, and green mask" src="https://github.com/user-attachments/assets/0646de4d-7334-4260-9403-1f3ab69673f0" />
 
 </div>
 
@@ -35,13 +35,15 @@ A 6-DOF arm finds green cubes it has never been told the location of, computes e
 <td width="50%" align="center">
 
 ### Robot model in RViz
-![URDF / robot model in RViz](docs/rviz_urdf.gif)
+
+<!-- Paste your RViz screenshot's <img ... /> tag here (drag-drop the file into GitHub's editor to get one). -->
 
 </td>
 <td width="50%" align="center">
 
 ### Live OctoMap from the depth camera
-![OctoMap occupancy grid](docs/octomap.png)
+
+<img width="100%" alt="OctoMap occupancy grid" src="https://github.com/user-attachments/assets/bad09ef0-84bf-4e76-a141-e80ae7e0f4b6" />
 
 </td>
 </tr>
