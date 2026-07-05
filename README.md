@@ -25,6 +25,9 @@ A 6-DOF arm finds green cubes it has never been told the location of, computes e
 ### Full pick-and-place cycle
 ![Arm picking cubes and placing them in the bin](docs/demo.gif)
 
+### Vision node — detected cube, HSV, and green mask
+![VisionNode output: raw camera image with detected cube, HSV view, and green mask](docs/vision_output.png)
+
 </div>
 
 <table>
