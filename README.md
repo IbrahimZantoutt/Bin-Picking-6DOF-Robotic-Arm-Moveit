@@ -40,7 +40,7 @@ A 6-DOF arm finds green cubes it has never been told the location of, computes e
 <tr>
 <td width="50%" align="center">
 
-### Live OctoMap from the depth camera
+### Live OctoMap
 
 <img width="100%" alt="OctoMap occupancy grid" src="https://github.com/user-attachments/assets/bad09ef0-84bf-4e76-a141-e80ae7e0f4b6" />
 
