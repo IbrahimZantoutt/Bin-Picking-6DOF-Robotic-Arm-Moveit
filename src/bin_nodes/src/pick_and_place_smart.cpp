@@ -157,10 +157,12 @@ int main(int argc, char **argv){
     auto place = [&](){
         //goToPos(0.374, -0.215, 0.327,-0.898, -1.442, 2.633);
         if(goToPos(0.313, -0.309, 0.379,3.141, 1.390, 3.142)){
-            std::string current_cube = "green_cube_" + std::to_string(action_count_);
-            detach("robot_arm", "wrist_yaw_link", current_cube, "link");
-            setGripper(0.0, 0.0);
-        }
+            RCLCPP_INFO(logger, "reached pos");
+        } else RCLCPP_INFO(logger, "failed to reach pos");
+
+        std::string current_cube = "green_cube_" + std::to_string(action_count_);
+        detach("robot_arm", "wrist_yaw_link", current_cube, "link");
+        setGripper(0.0, 0.0);
     };
 
     auto addCollisionObjects = [&](){

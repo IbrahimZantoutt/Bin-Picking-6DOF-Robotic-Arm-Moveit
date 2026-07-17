@@ -163,11 +163,16 @@ source install/setup.bash
 # Terminal 1 — Gazebo world, robot, controllers, MoveIt move_group + RViz
 ros2 launch moveit_config gazebo.launch.py
 
-# Terminal 2 — perception node (green-cube detection + get_targets service)
-ros2 run bin_nodes VisionNode
+# Terminal 2 — the full mission: perception node + autonomous pick-and-place loop
+ros2 launch moveit_config mission.launch.py
+```
 
-# Terminal 3 — autonomous pick-and-place loop
-ros2 launch moveit_config pick_and_place_smart.launch.py
+`mission.launch.py` starts `VisionNode` (green-cube detection + `get_targets` service),
+then launches the pick-and-place loop a few seconds later so perception has a detection
+ready. Tune the wait with `mission_delay` if needed:
+
+```bash
+ros2 launch moveit_config mission.launch.py mission_delay:=8.0
 ```
 
 The arm will now clear every green cube from the table into the bin, planning around the tables and wall on each cycle.
