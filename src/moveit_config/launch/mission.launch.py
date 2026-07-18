@@ -12,8 +12,10 @@ def generate_launch_description():
     # soon as get_targets reports "no target", so it must not run first.
     mission_delay = DeclareLaunchArgument(
         "mission_delay",
-        default_value="3.0",
-        description="Seconds to wait before starting the pick-and-place loop.",
+        default_value="10.0",
+        description="Seconds to wait before starting the pick-and-place loop. "
+                    "Gazebo + camera + controllers need ~8-12 s to come up; the "
+                    "node also retries internally, this just avoids wasted retries.",
     )
 
     # Same robot model move_group uses in gazebo.launch.py (root = world).

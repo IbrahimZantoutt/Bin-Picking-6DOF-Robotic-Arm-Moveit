@@ -43,7 +43,8 @@
   <exec_depend>rviz_common</exec_depend>
   <exec_depend>rviz_default_plugins</exec_depend>
   <exec_depend>tf2_ros</exec_depend>
-  <exec_depend>warehouse_ros_mongo</exec_depend>
+  <!-- warehouse_ros_mongo has no Humble binary and the mission doesn't use the
+       warehouse; use warehouse_ros_sqlite instead if you ever need it. -->
   <exec_depend>xacro</exec_depend>
   <!-- Gazebo plugins loaded at runtime by gazebo.launch.py: -->
   <!--   camera.urdf  -> libgazebo_ros_camera.so     (gazebo_plugins) -->

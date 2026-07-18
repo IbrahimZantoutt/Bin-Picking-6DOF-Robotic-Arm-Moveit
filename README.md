@@ -159,23 +159,28 @@ source install/setup.bash
 
 ### Run
 
+Both options bring up the whole demo — Gazebo + RViz + the autonomous pick-and-place mission.
+
+####  Docker *(recommended)*
+
+```bash
+xhost +local:root          # let the containers open GUI windows
+docker compose up --build
+```
+
+####  Native — two terminals
+
 ```bash
 # Terminal 1 — Gazebo world, robot, controllers, MoveIt move_group + RViz
 ros2 launch moveit_config gazebo.launch.py
 
-# Terminal 2 — the full mission: perception node + autonomous pick-and-place loop
+# Terminal 2 — perception node + autonomous pick-and-place loop
 ros2 launch moveit_config mission.launch.py
 ```
 
-`mission.launch.py` starts `VisionNode` (green-cube detection + `get_targets` service),
-then launches the pick-and-place loop a few seconds later so perception has a detection
-ready. Tune the wait with `mission_delay` if needed:
+Perception needs a few seconds to warm up; bump the startup wait with `mission_delay:=<seconds>` if the arm starts before a cube is detected.
 
-```bash
-ros2 launch moveit_config mission.launch.py mission_delay:=8.0
-```
-
-The arm will now clear every green cube from the table into the bin, planning around the tables and wall on each cycle.
+The arm then clears every green cube from the table into the bin, planning around the tables and wall on each cycle.
 
 ---
 

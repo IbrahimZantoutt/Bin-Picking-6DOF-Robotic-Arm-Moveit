@@ -251,11 +251,24 @@ int main(int argc, char **argv){
 
     addCollisionObjects();
 
+    // Gazebo + the camera + the controllers take several seconds to come up
+    // after launch, so the first get_targets calls report "no target" simply
+    // because VisionNode has no camera frame yet -- NOT because the table is
+    // empty. Wait (with retries) for the first real detection before starting;
+    // only *after* we've seen a cube does an empty result mean "table cleared".
     geometry_msgs::msg::Point target;
-    while (rclcpp::ok() && search(target)) {
-        pick(target.x, target.y, target.z);      // pick must take the point (see below)
+    bool have_target = false;
+    for (int i = 0; i < 60 && rclcpp::ok(); ++i) {   // wait up to ~60 s
+        if (search(target)) { have_target = true; break; }
+        RCLCPP_INFO(logger, "Waiting for perception to produce a target... (%d)", i);
+        std::this_thread::sleep_for(1s);
+    }
+
+    while (rclcpp::ok() && have_target) {
+        pick(target.x, target.y, target.z);
         std::this_thread::sleep_for(2s);
         place();
+        have_target = search(target);   // stop once the table has been cleared
     }
 
 

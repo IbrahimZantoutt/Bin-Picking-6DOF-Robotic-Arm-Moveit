@@ -11,7 +11,6 @@ RUN apt-get update && \
       ros-humble-gazebo-ros2-control \
       ros-humble-ros2-controllers \
       ros-humble-rviz2 \
-      ros-humble-warehouse-ros-mongo \
       libopencv-dev \
       python3-rosdep && \
     rm -rf /var/lib/apt/lists/*

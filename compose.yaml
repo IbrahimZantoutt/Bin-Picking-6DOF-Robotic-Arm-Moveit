@@ -3,6 +3,28 @@
 services:
   launch_main:
     build: .
+    command: bash -c "source /opt/ros/humble/setup.bash && source install/setup.bash && ros2 launch moveit_config gazebo.launch.py"
+    network_mode: host
+    ipc: host
+    image: binpicking:latest
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - ROS_DOMAIN_ID=0
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+
 
   launch_process:
     build: .
+    command: bash -c "source /opt/ros/humble/setup.bash && source install/setup.bash && ros2 launch moveit_config mission.launch.py"
+    network_mode: host
+    ipc: host
+    depends_on:
+      - launch_main
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - ROS_DOMAIN_ID=0
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
