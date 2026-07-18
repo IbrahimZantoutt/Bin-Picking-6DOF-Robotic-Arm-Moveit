@@ -45,6 +45,11 @@
   <exec_depend>tf2_ros</exec_depend>
   <exec_depend>warehouse_ros_mongo</exec_depend>
   <exec_depend>xacro</exec_depend>
+  <!-- Gazebo plugins loaded at runtime by gazebo.launch.py: -->
+  <!--   camera.urdf  -> libgazebo_ros_camera.so     (gazebo_plugins) -->
+  <!--   world.sdf    -> libgazebo_link_attacher.so  (ros2_linkattacher) -->
+  <exec_depend>gazebo_plugins</exec_depend>
+  <exec_depend>ros2_linkattacher</exec_depend>
 
 
   <export>

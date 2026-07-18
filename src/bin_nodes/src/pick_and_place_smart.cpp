@@ -25,7 +25,28 @@ int main(int argc, char **argv){
 
     auto request  = std::make_shared<bin_interfaces::srv::GetTargets::Request>();
 
-    int action_count_ = 0;
+    // The world spawns exactly these cubes at these positions. The camera only
+    // reports *where* a cube is, never *which* one, so we attach the model whose
+    // known position is closest to the detection -- never a blind counter (which
+    // would grab the wrong cube and run off the end of the real models).
+    struct Cube { std::string name; double x, y; };
+    const std::vector<Cube> kCubes = {
+        {"green_cube_1", 0.3, 0.55},
+        {"green_cube_2", 0.5, 0.15},
+        {"green_cube_3", 0.4, 0.35},
+    };
+    std::string current_cube_;   // model attached this cycle ("" = nothing held)
+
+    // Return the known cube nearest (x,y), or "" if none is within the gate.
+    auto nearestCube = [&](double x, double y) -> std::string {
+        std::string best;
+        double best_d2 = 0.05 * 0.05;   // 5 cm gate; cubes are ~20 cm apart
+        for (const auto & c : kCubes) {
+            double d2 = (c.x - x) * (c.x - x) + (c.y - y) * (c.y - y);
+            if (d2 < best_d2) { best_d2 = d2; best = c.name; }
+        }
+        return best;
+    };
 
     auto search = [&](geometry_msgs::msg::Point & out) -> bool {
         if (!client->wait_for_service(5s)) {
@@ -146,11 +167,16 @@ int main(int argc, char **argv){
 
     auto pick = [&](double x, double y, double z){
         //goToPos(0.304, 0.339, 0.247,2.863, 1.389, -3.141);  better to add when added collision aware movement
+        current_cube_ = nearestCube(x, y);
+        if (current_cube_.empty()) {
+            RCLCPP_WARN(logger, "No known cube near (%.3f, %.3f); skipping pick.", x, y);
+            return;
+        }
         if(goToPos(x, y, z+0.06, 3.1416, 0, 0)){
-            action_count_++;
-            std::string current_cube = "green_cube_" + std::to_string(action_count_);
-            attach("robot_arm", "wrist_yaw_link", current_cube, "link");
+            attach("robot_arm", "wrist_yaw_link", current_cube_, "link");
             setGripper(0.01, 0.01);
+        } else {
+            current_cube_.clear();   // never grabbed it -> nothing to detach later
         }
     };
 
@@ -160,9 +186,13 @@ int main(int argc, char **argv){
             RCLCPP_INFO(logger, "reached pos");
         } else RCLCPP_INFO(logger, "failed to reach pos");
 
-        std::string current_cube = "green_cube_" + std::to_string(action_count_);
-        detach("robot_arm", "wrist_yaw_link", current_cube, "link");
+        // Only detach the cube we actually attached this cycle -- avoids the
+        // "Joint does not exist!" failures from detaching a phantom name.
+        if (!current_cube_.empty()) {
+            detach("robot_arm", "wrist_yaw_link", current_cube_, "link");
+        }
         setGripper(0.0, 0.0);
+        current_cube_.clear();
     };
 
     auto addCollisionObjects = [&](){

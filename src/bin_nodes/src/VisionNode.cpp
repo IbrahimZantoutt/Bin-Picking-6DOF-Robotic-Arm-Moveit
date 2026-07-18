@@ -91,6 +91,11 @@ class VisionNode: public rclcpp::Node{
                     cv::circle(cv_image, {u, v}, 4, cv::Scalar(0, 0, 255), -1);
                     localize(u, v);  // deproject + transform + cache
                 }
+            } else {
+                // No green blob in view -> nothing to pick. Clear the cached
+                // target so get_targets reports "not found" and the pick loop
+                // stops once the table has been cleared.
+                have_target_ = false;
             }
 
             cv::imshow("hsv", hsv);

@@ -1,0 +1,8 @@
+
+
+services:
+  launch_main:
+    build: .
+
+  launch_process:
+    build: .
