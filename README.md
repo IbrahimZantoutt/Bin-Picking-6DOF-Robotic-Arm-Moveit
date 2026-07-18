@@ -130,6 +130,17 @@ src/
 
 ## Getting Started
 
+### Run with Docker (recommended)
+
+The fastest path — no local ROS install. The image builds the whole workspace and one command brings up Gazebo, RViz, MoveIt, and the autonomous pick-and-place mission.
+
+```bash
+xhost +local:root     # let the container open GUI windows on your display
+docker compose up     # builds the image on first run, then launches everything
+```
+
+---
+
 ### Prerequisites
 - Ubuntu 22.04 + **ROS 2 Humble**
 - **Gazebo Classic**, MoveIt 2, and `ros2_control` / `gazebo_ros2_control`
@@ -140,7 +151,7 @@ sudo apt install ros-humble-moveit ros-humble-gazebo-ros-pkgs \
   ros-humble-ros2-controllers ros-humble-cv-bridge ros-humble-image-geometry
 ```
 
-### Clone & build
+### Build
 
 > **Note:** `IFRA_LinkAttacher` is referenced but not bundled, so clone it separately into `src/` before building.
 
@@ -159,28 +170,20 @@ source install/setup.bash
 
 ### Run
 
-Both options bring up the whole demo — Gazebo + RViz + the autonomous pick-and-place mission.
-
-####  Docker *(recommended)*
-
-```bash
-xhost +local:root          # let the containers open GUI windows
-docker compose up --build
-```
-
-####  Native — two terminals
+With the workspace built, the demo runs in **two terminals** — Gazebo + RViz + the autonomous pick-and-place mission.
 
 ```bash
 # Terminal 1 — Gazebo world, robot, controllers, MoveIt move_group + RViz
 ros2 launch moveit_config gazebo.launch.py
+```
 
+```bash
 # Terminal 2 — perception node + autonomous pick-and-place loop
+source install/setup.bash
 ros2 launch moveit_config mission.launch.py
 ```
 
-Perception needs a few seconds to warm up; bump the startup wait with `mission_delay:=<seconds>` if the arm starts before a cube is detected.
-
-The arm then clears every green cube from the table into the bin, planning around the tables and wall on each cycle.
+Perception needs a few seconds to warm up; bump the startup wait with `mission_delay:=<seconds>` if the arm starts before a cube is detected. The arm then clears every green cube from the table into the bin, planning around the tables and wall on each cycle.
 
 ---
 
