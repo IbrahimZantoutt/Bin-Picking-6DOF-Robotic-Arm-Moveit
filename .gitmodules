@@ -1,0 +1,4 @@
+[submodule "src/IFRA_LinkAttacher"]
+	path = src/IFRA_LinkAttacher
+	url = https://github.com/IFRA-Cranfield/IFRA_LinkAttacher.git
+	branch = humble
