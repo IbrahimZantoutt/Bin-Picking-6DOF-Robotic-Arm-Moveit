@@ -42,7 +42,7 @@ pipeline{
                     steps{
                         sh'''
                         python --version
-                        echo "print("testing python")" > test.py
+                        echo "print('testing python')" > test.py
                         python test.py
                         '''
 
