@@ -14,3 +14,11 @@ __pycache__/
 *.swp
 *~
 .DS_Store
+
+
+perception_training/.venv/
+perception_training/dataset/
+perception_training/runs/
+*.pt
+*.onnx
+*.cache
