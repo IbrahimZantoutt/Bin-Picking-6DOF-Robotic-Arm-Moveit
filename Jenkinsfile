@@ -2,7 +2,7 @@
 
 pipeline{
     agent any
-    options{
+    parameters{
         choice(choices:["noPush","push"],name:"PushAction",description:"push or not?")
     }
     stages{
@@ -26,28 +26,30 @@ pipeline{
                 '''
             }
         }
-        parallel{
-            stage("ros_build"){
-                agent docker{image 'binpicking'}
-                steps{
-                    sh'''#!/bin/bash
-                    source /opt/ros/humble/setup.bash
-                    colcon build
-                    '''
+        stage("parallel build stage"){
+             parallel{
+                stage("ros_build"){
+                    agent docker{image 'binpicking'}
+                    steps{
+                        sh'''#!/bin/bash
+                        source /opt/ros/humble/setup.bash
+                        colcon build
+                        '''
+                    }
+                }
+                stage("python_test"){
+                    agent docker {image 'python:latest'}
+                    steps{
+                        sh'''
+                        python --version
+                        echo "print("testing python")" > test.py
+                        python test.py
+                        '''
+                    }
+                    archiveArtifacts artifacts:"test.py", onlyIfSuccessful:true
                 }
             }
-            stage("python_test"){
-                agent docker {image 'python:latest'}
-                steps{
-                    sh'''
-                    python --version
-                    echo "print("testing python")" > test.py
-                    python test.py
-                    '''
-                }
-                archiveArtifacts artifacts:"test.py", onlyIfSuccessful:true
-            }
-        }
+        }   
         stage("push_image"){
             when{
                 allOf{
