@@ -27,7 +27,7 @@ pipeline{
             }
         }
         stage("parallel build stage"){
-             parallel{
+            parallel{
                 stage("ros_build"){
                     agent {docker{image 'binpicking'}}
                     steps{
@@ -38,7 +38,7 @@ pipeline{
                     }
                 }
                 stage("python_test"){
-                    agent {docker {image 'python:latest'}}}
+                    agent {docker {image 'python:latest'}}
                     steps{
                         sh'''
                         python --version
