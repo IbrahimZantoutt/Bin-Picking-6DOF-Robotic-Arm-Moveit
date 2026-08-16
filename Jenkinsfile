@@ -29,7 +29,7 @@ pipeline{
         stage("parallel build stage"){
              parallel{
                 stage("ros_build"){
-                    agent docker{image 'binpicking'}
+                    agent {docker{image 'binpicking'}}
                     steps{
                         sh'''#!/bin/bash
                         source /opt/ros/humble/setup.bash
@@ -38,7 +38,7 @@ pipeline{
                     }
                 }
                 stage("python_test"){
-                    agent docker {image 'python:latest'}
+                    agent {docker {image 'python:latest'}}}
                     steps{
                         sh'''
                         python --version
