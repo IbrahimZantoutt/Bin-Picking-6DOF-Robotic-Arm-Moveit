@@ -54,7 +54,7 @@ pipeline{
                     expression{params.PushAction == "push"};
                     expression{fileExists("Dockerfile")};
                     changeset "Dockerfile";
-                    Branch "main"
+                    branch 'main'
                 }
             }
             steps{
