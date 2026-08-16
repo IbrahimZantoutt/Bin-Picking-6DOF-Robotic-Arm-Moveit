@@ -45,8 +45,10 @@ pipeline{
                         echo "print("testing python")" > test.py
                         python test.py
                         '''
+
+                        archiveArtifacts artifacts:"test.py", onlyIfSuccessful:true
                     }
-                    archiveArtifacts artifacts:"test.py", onlyIfSuccessful:true
+                    
                 }
             }
         }   
